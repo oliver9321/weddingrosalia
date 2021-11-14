@@ -44,7 +44,6 @@
 	font-weight: 400;
 	text-transform: uppercase;
 	display: inline-block;
-	cursor: pointer;
 	padding: 12px 22px;
 	font-size: 13px;
 	border: 1px solid transparent;
@@ -70,7 +69,6 @@
 	transition: .5s;
 }
 .single_product:hover{
-    cursor: pointer;
 	box-shadow: 5px 5px 25px rgba(0,0,0,0.03);
 }
 
@@ -200,6 +198,11 @@
         img.crazy_lazy {
             opacity: 0
         }
+
+.gla_default_menu li i {
+    font-size: 23px !important;
+}
+   
     </style>
     <style></style>
 </head>   
@@ -226,7 +229,7 @@
                             <div class="menu-menu-1-container">
                                 <ul id="menu-menu-1" class="menu">
                                     <li id="menu-item-766" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-137 current_page_item menu-item-766"><a href="../index.html">Inicio</a></li>
-                                    <li id="menu-item-779" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-779"><a href="../friends-blocks/index.html">Regalos</a></li>
+                                    <li id="menu-item-779" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-779"><a href="../friends-blocks/index.html">Obsequios</a></li>
                                 </ul>
                             </div>
                             <div class="gla_main_menu_content_menu_copy"> </div>
@@ -237,7 +240,23 @@
                         <div class="menu-menu-1-container">
                             <ul id="menu-menu-2" class="menu">
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-137 current_page_item menu-item-766"><a href="../index.html">Inicio</a></li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-779"><a href="../friends-blocks/index.html">Regalos</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-779"><a href="../friends-blocks/index.html">Obsequios</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-780 dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa fa-shopping-cart fa-3x"> <span class="badge badge-light" id="cantidadObsequios">0</span></i>
+                                    </a>
+                                    <div class="dropdown-menu">
+                            <br>
+                                         <a class="dropdown-item" href="#">Action  x</a>
+                                         <hr>
+                                         <a class="dropdown-item" href="#">Something else here x</a>
+                                         <hr>
+                                         <div class="dropdown-divider"> </div>
+                                            <center><button type="button" class="btn btn-success btn-sm">Confirmar</button></center> 
+                                        
+                                    </div>
+
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -296,29 +315,34 @@
                         <div class="gla_portfolio grid">
                         <?php $obj2 = json_decode(file_get_contents('http://dyrwedding.com/sistema/index.php?c=regalos&a=getJsonRegalos'), true); ?>
                                
-                                <?php foreach ($obj2  as $key => $value) : ?>
+                                <?php foreach ($obj2  as $key => $value) { 
+                                    $Id           = $value['Id'];
+                                    $Link         = $value['Link'];
+                                    $Imagen       = $value['Imagen'];
+                                    $Stock        = $value['Stock'];
+                                    $Descripcion  = trim($value['Descripcion']);
+                                    ?>
 
-                                    <div class="col-sm-4 gla_anim_box grid-item <?= $value['CategoriaId'] ?>">
+                                    <div class="col-sm-3 gla_anim_box grid-item <?= $value['CategoriaId'] ?> <?= ($Stock < 1) ? 'reservado' : 'disponible' ?>" onclick="AnadirRegalo(<?=$Id?>, <?=$Stock?>)">
                                      <div class="single_product">
-                                        <div class="product_image <?= ($value['Stock'] < 1) ? 'reservado' : 'disponible' ?>">
-                                        <img src="http://dyrwedding.com/sistema/<?= $value['Imagen']?>" alt="<?= $value['Titulo']?>" width="80">
+                                        <div class="product_image ">
+                                        <img src="http://dyrwedding.com/sistema/<?= $Imagen?>" alt="<?= $value['Titulo']?>" width="80">
                                            
-                                            <?= ($value['Stock'] < 1) ? '<div class="new_badge ">Reservado</div>' : '<div class="new_badge2">'.$value['Stock'].' Disponible (s)</div>' ?>
-                                            <div class="box-content">
-                                                <a href="#"><i class="fa fa-cart-plus"></i></a> 
-                                            </div>							
-                                      
+                                            <?= ($Stock < 1) ? '<div class="new_badge ">Reservado</div>' : '<div class="new_badge2">'.$Stock.' Disponible (s)</div>' ?>
+                                            <?= ($Descripcion != "") ? "<div class='box-content' style='color:white'>".$Descripcion."</div>" : ""; ?>
+                                      <!--cantidadObsequios-->
                                         </div>
-
+                                        <br>
+                                        <?= ($Stock > 0) ? '<a href="#" class="rounded-circle"><i class="fa fa-cart-plus text-success fa-2x "></i></a>' : '<a href="#"><i class="fa fa-cart-plus text-danger fa-2x"></i></a>' ?>
                                         <div class="product_btm_text">
-                                            <h4><a href="#"><?=$value['Titulo'] ?></a></h4>
-                                            <span class="price"><b>RD$ <?= number_format($value['Precio'])  ?></b></span>
-
+                                            <hr>
+                                            <h4><a  target="_blank" href="<?=$Link?>"><?=$value['Titulo'] ?></a></h4>
+                                            <span class="price"><b>RD$ <?= number_format($value['Precio'])  ?></b></span><br>
                                         </div>
                                     </div>
                                 </div>
 
-                                <?php endforeach; ?>
+                                <?php } ?>
 
                         </div>
                     </div>
@@ -370,6 +394,24 @@
 
     <script>
 
+
+        function AnadirRegalo(regaloId, Stock){
+
+            if(regaloId){
+
+
+               if(parseInt(Stock) ){
+                var cantidadActual =  $("#cantidadObsequios").html();
+                cantidadActual     = parseInt(cantidadActual);
+                console.log(cantidadActual);
+                cantidadActual = parseInt(cantidadActual) + parseInt(1);
+                $("#cantidadObsequios").html(cantidadActual);
+                }else{
+
+                }
+
+            }
+        }
     </script>
 </body>
 </html>
