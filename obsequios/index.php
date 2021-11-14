@@ -280,16 +280,16 @@
                     <div class="container text-center">
                         <h2 class="gla_h2_title">Obsequiar en 3 pasos</h2>
                         <div class="row gla_icon_boxes">
-                            <div class="gla_icon_box fw-col-sm-4 text-center col-xs-12"> <i class="ti flaticon-016-calendar"></i>
+                            <div class="gla_icon_box fw-col-sm-4 text-center col-xs-12"> <i class="ti ti-gift"></i>
                                 <div class="gla_icon_box_content">
                                     <h4> <b> PASO 1</b> </h4>Elegir el obsequio con el que más te identifiques y reservarlo</div>
                             </div>
-                            <div class="gla_icon_box fw-col-sm-4 text-center col-xs-12"> <i class="ti flaticon-041-cake"></i>
+                            <div class="gla_icon_box fw-col-sm-4 text-center col-xs-12"> <i class="ti ti-shopping-cart-full"></i>
                                 <div class="gla_icon_box_content">
                                     <h4> <b> PASO 2 </b> </h4>Dirigirte a la tienda, preguntar por el artículo y comprarlo</div>
                             </div>
 
-                            <div class="gla_icon_box fw-col-sm-4 text-center col-xs-12"> <i class="ti flaticon-006-hand"></i>
+                            <div class="gla_icon_box fw-col-sm-4 text-center col-xs-12"> <i class="ti ti-mobile"></i>
                                 <div class="gla_icon_box_content">
                                     <h4> <b> PASO 3 </b> </h4>Contactanos para coordinar la entrega del regalo</div>
                             </div>
