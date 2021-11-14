@@ -257,6 +257,9 @@
                                     </div>
 
                                 </li>
+                                <li>
+                                <a href="#" id="InvitadoOnline"></a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -333,7 +336,7 @@
                                       <!--cantidadObsequios-->
                                         </div>
                                         <br>
-                                        <?= ($Stock > 0) ? '<a href="#" class="rounded-circle"><i class="fa fa-cart-plus text-success fa-2x "></i></a>' : '<a href="#"><i class="fa fa-cart-plus text-danger fa-2x"></i></a>' ?>
+                                        <?= ($Stock > 0) ? '<b class="rounded-circle"><i class="fa fa-cart-plus text-success fa-2x "></i></b>' : '<b"><i class="fa fa-cart-plus text-danger fa-2x"></i></b>' ?>
                                         <div class="product_btm_text">
                                             <hr>
                                             <h4><a  target="_blank" href="<?=$Link?>"><?=$value['Titulo'] ?></a></h4>
@@ -393,6 +396,14 @@
     <script type='text/javascript' src='../wp-includes/js/wp-embed.min.js' defer='defer'></script>
 
     <script>
+/*
+$(document).ready(function() {
+    var nombre = localStorage.getItem("Nombre");
+    if(nombre != ""){
+        $("#InvitadoOnline").html("Hola, "+ nombre);
+    }
+
+});*/
 
 
         function AnadirRegalo(regaloId, Stock){

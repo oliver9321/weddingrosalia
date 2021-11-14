@@ -683,6 +683,9 @@ var Comentario  = $("#Comentario").val();
 var Asistira  = $('input[name="asistira"]:checked').val();
 
 if(Nombre !== "" && Apellido !== ""){
+    
+    localStorage.setItem("Nombre", Nombre);
+    localStorage.setItem("Apellido", Apellido);
 
     $.ajax({
         type: 'POST',
@@ -710,7 +713,6 @@ if(Nombre !== "" && Apellido !== ""){
                     $(".wpcf7-response-output").html("Lamento que no puedas asistir a este dia tan especial. Gracias!");
                  }
            
-              
             }else{
               alert("Error en el registro");
             }
