@@ -229,7 +229,7 @@
                             <div class="menu-menu-1-container">
                                 <ul id="menu-menu-1" class="menu">
                                     <li id="menu-item-766" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-137 current_page_item menu-item-766"><a href="../index.php">Inicio</a></li>
-                                    <li id="menu-item-779" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-779"><a href="obsequios/index.php">Obsequios</a></li>
+                                    <li id="menu-item-779" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-779"><a href="index.php">Obsequios</a></li>
                                 </ul>
                             </div>
                             <div class="gla_main_menu_content_menu_copy"> </div>
@@ -240,7 +240,7 @@
                         <div class="menu-menu-1-container">
                             <ul id="menu-menu-2" class="menu">
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-137 current_page_item menu-item-766"><a href="../index.php">Inicio</a></li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-779"><a href="obsequios/index.php">Obsequios</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-779"><a href="index.php">Obsequios</a></li>
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-780 dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         <i class="fa fa-shopping-cart fa-3x"> <span class="badge badge-light" id="cantidadObsequios">0</span></i>
