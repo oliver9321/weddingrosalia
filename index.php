@@ -333,7 +333,7 @@
                           <input type="button" value="Confirmar" class="wpcf7-form-control wpcf7-submit btn submit"  onclick="Registrar()"/>
                         </div>
                       </div>
-                      <div class="wpcf7-response-output wpcf7-display-none">
+                      <div class="wpcf7-response-output">
                       </div>
                     </form>
                   </div>
@@ -609,7 +609,7 @@ the visual arts program at the time), and she remembers Andy being an ‘arrogan
               <h2 class="gla_h2_title">Regalos
               </h2>
               <div class="gla_text_block">
-                <p>Estamos más que agradecidos con tu asistencia y para nosotros es un gran honor tenerte en el día más importante de nuestras vidas. Si quieres obsequiarnos algún presente, podrías hacerlo eligiendo uno de los artículos de nuestra
+                <p style="font-size: 16px;">Estamos más que agradecidos con tu asistencia y para nosotros es un gran honor tenerte en el día más importante de nuestras vidas. Si quieres obsequiarnos algún presente, podrías hacerlo eligiendo uno de los artículos de nuestra
                   lista de regalos o realizando un aporte económico en nuestra cuenta bancaria
                   <br>
                   <br> 781944228 Banco Popular (colocar en el asunto "Regalo de bodas")
@@ -695,18 +695,22 @@ if(Nombre !== "" && Apellido !== ""){
         }, success: function(response){
 
             if(response){
+
                 $("#Nombre").val("");
                  $("#Apellido").val("");
                  $("#Apellido").val("");
 
-                 var posicion = $("#regalosSection").offset().top;
-                 $("#regalosSection").offset().top;
-                $("html, body").animate({
+                 if(Asistira == 'Si'){
+                    var posicion = $("#regalosSection").offset().top;
+                  $("#regalosSection").offset().top;
+                    $("html, body").animate({
                     scrollTop: posicion
-                }, 2500); 
+                 }, 2500); 
+                 }else{
+                    $(".wpcf7-response-output").html("Lamento que no puedas asistir a este dia tan especial. Gracias!");
+                 }
+           
               
-              
-
             }else{
               alert("Error en el registro");
             }
