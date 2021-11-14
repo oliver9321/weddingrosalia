@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dewing&Rosalia</title>
+    <title>Rosalia & Dewin</title>
     <style type="text/css">
         img.wp-smiley,
         img.emoji {
@@ -214,7 +214,7 @@
             <nav class="gla_light_nav gla_transp_nav ">
                 <div class="container">
                     <div class="gla_logo_container clearfix">
-                        <div class="gla_logo_txt"> <a href="#" class="gla_logo">DEWIN &amp; ROSALIA</a>
+                        <div class="gla_logo_txt"> <a href="#" class="gla_logo">ROSALIA &amp; DEWIN</a>
                             <div class="gla_logo_und">Diciembre 18, 2021</div>
                         </div>
                     </div>
@@ -291,7 +291,7 @@
 
                             <div class="gla_icon_box fw-col-sm-4 text-center col-xs-12"> <i class="ti flaticon-006-hand"></i>
                                 <div class="gla_icon_box_content">
-                                    <h4> <b> PASO 3 </b> </h4>Llevar el obsequio a la ceremonia</div>
+                                    <h4> <b> PASO 3 </b> </h4>Contactanos para coordinar la entrega del regalo</div>
                             </div>
                         </div>
                     </div>
