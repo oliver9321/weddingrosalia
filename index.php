@@ -288,7 +288,7 @@
                           </label>
                           <br/> 
                           <span class="wpcf7-form-control-wrap your-name">
-                            <input type="text" name="your-name" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control form-opacity" aria-required="true" aria-invalid="false"/>
+                            <input type="text" name="Nombre" id="Nombre" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control form-opacity" aria-required="true" aria-invalid="false" required/>
                           </span>
                         </div>
                         <div class="col-md-6"> 
@@ -296,7 +296,7 @@
                           </label>
                           <br/> 
                           <span class="wpcf7-form-control-wrap email">
-                            <input type="text" name="email" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control form-opacity" aria-required="true" aria-invalid="false"/>
+                            <input type="text" name="Apellido" id="Apellido" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control form-opacity" aria-required="true" aria-invalid="false" required/>
                           </span>
                         </div> 
                         <br>
@@ -307,12 +307,12 @@
                           <span class="wpcf7-form-control-wrap attend">
                             <span class="wpcf7-form-control wpcf7-radio">
                               <span class="wpcf7-list-item first">
-                                <input type="radio" name="attend" value="Si"/>
+                                <input type="radio" name="asistira" class="asistira" value="Si"/>
                                 <span class="wpcf7-list-item-label">Si
                                 </span>
                               </span>
                               <span class="wpcf7-list-item last">
-                                <input type="radio" name="attend" value="No" />
+                                <input type="radio" name="asistira" class="asistira" value="No" />
                                 <span class="wpcf7-list-item-label">No
                                 </span>
                               </span>
@@ -325,12 +325,12 @@
                           </label>
                           <br/> 
                           <span class="wpcf7-form-control-wrap comments">
-                            <textarea name="comments" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea form-control form-opacity" aria-invalid="false">
+                            <textarea name="Comentario" id="Comentario" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea form-control form-opacity" aria-invalid="false">
                             </textarea>
                           </span>
                         </div>
                         <div class="col-md-12"> 
-                          <input type="submit" value="Confirmar" class="wpcf7-form-control wpcf7-submit btn submit" />
+                          <input type="button" value="Confirmar" class="wpcf7-form-control wpcf7-submit btn submit"  onclick="Registrar()"/>
                         </div>
                       </div>
                       <div class="wpcf7-response-output wpcf7-display-none">
@@ -615,8 +615,8 @@ the visual arts program at the time), and she remembers Andy being an ‘arrogan
                   <br> 781944228 Banco Popular (colocar en el asunto "Regalo de bodas")
                 </p>
                 <div class="col-md-12"> 
-                  <a href="obsequios/index.php"  class="wpcf7-form-control wpcf7-submit btn submit">Obsequiar
-                  </a>
+                  <a href="obsequios/index.php"  class="wpcf7-form-control wpcf7-submit btn submit">Obsequiar </a>
+                  
                 </div>
               </div>
               </section>
@@ -675,13 +675,50 @@ the visual arts program at the time), and she remembers Andy being an ‘arrogan
 
       <script>
 
-                $.ajax({
-                    url: "test.html",
-                    context: document.body,
-                    success: function(){
-                    $(this).addClass("done");
-                    }
-                })
+function Registrar(){
+
+var Nombre      = $("#Nombre").val();
+var Apellido    = $("#Apellido").val();
+var Comentario  = $("#Comentario").val();
+var Asistira  = $('input[name="asistira"]:checked').val();
+
+if(Nombre !== "" && Apellido !== ""){
+
+    $.ajax({
+        type: 'POST',
+        url: "http://dyrwedding.com/sistema/index.php?c=invitados&a=Save",
+        data: {
+            'Nombre': Nombre,
+            'Apellido':  Apellido,
+            'Comentario': Comentario,
+            'Asistira':Asistira
+        }, success: function(response){
+
+            if(response){
+                $("#Nombre").val("");
+                 $("#Apellido").val("");
+                 $("#Apellido").val("");
+
+                 var posicion = $("#regalosSection").offset().top;
+                 $("#regalosSection").offset().top;
+                $("html, body").animate({
+                    scrollTop: posicion
+                }, 2500); 
+              
+              
+
+            }else{
+              alert("Error en el registro");
+            }
+        }
+    });
+
+}else{
+alert("Favor completar la informacion solicitada");
+}
+
+}
+
       </script>
       </body>
     </html>
