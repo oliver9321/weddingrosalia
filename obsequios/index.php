@@ -245,12 +245,8 @@
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         <i class="fa fa-shopping-cart fa-3x"> <span class="badge badge-light" id="cantidadObsequios">0</span></i>
                                     </a>
-                                    <div class="dropdown-menu">
-                            <br>
-                                         <a class="dropdown-item" href="#">Action  x</a>
-                                         <hr>
-                                         <a class="dropdown-item" href="#">Something else here x</a>
-                                         <hr>
+                                    <div class="dropdown-menu" id="listaRegalos">
+                                        
                                          <div class="dropdown-divider"> </div>
                                             <center><button type="button" class="btn btn-success btn-sm">Confirmar</button></center> 
                                         
@@ -375,8 +371,15 @@
             </div>
         </section>
     </div>
-    <script type='text/javascript' src='.././ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js' defer='defer'></script>
+    <script type='text/javascript' src='../js/jquery.min.js' defer='defer'></script>
     <script type='text/javascript'>
+
+    var nombre = localStorage.getItem("Nombre");
+    if(nombre != ""){
+        document.getElementById("InvitadoOnline").innerHTML = "Hola, "+ nombre;
+    }
+
+
         try {
             jQuery.noConflict();
         } catch (e) {};
@@ -396,15 +399,8 @@
     <script type='text/javascript' src='../wp-includes/js/wp-embed.min.js' defer='defer'></script>
 
     <script>
-/*
-$(document).ready(function() {
-    var nombre = localStorage.getItem("Nombre");
-    if(nombre != ""){
-        $("#InvitadoOnline").html("Hola, "+ nombre);
-    }
-
-});*/
-
+        
+        var MyLista = [];
 
         function AnadirRegalo(regaloId, Stock){
 
@@ -412,14 +408,26 @@ $(document).ready(function() {
 
 
                if(parseInt(Stock) ){
+
+                var nombre = localStorage.getItem("Nombre");
+                var apellido = localStorage.getItem("Apellido");
+
                 var cantidadActual =  $("#cantidadObsequios").html();
                 cantidadActual     = parseInt(cantidadActual);
                 console.log(cantidadActual);
                 cantidadActual = parseInt(cantidadActual) + parseInt(1);
                 $("#cantidadObsequios").html(cantidadActual);
-                }else{
 
-                }
+                MyLista.push({
+                    RegaloId: regaloId, 
+                    Nombre:  nombre,
+                    Apellido: apellido,
+                    Cantidad: Stock
+                });
+              
+                console.log(MyLista);
+            
+            }
 
             }
         }
