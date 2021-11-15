@@ -145,12 +145,23 @@
             <div class="container text-center">
               <h2 class="gla_h2_title" style="color: #9F6E65;">Nuestra historia
               </h2>
-              <h3 class="gla_subtitle">The Fourth of July
+              <h3 class="gla_subtitle">De un soporte y una salida improvisada a encontrar el amor de mi vida
               </h3>
-              <div class="gla_text_block">
-                <p>My fiancé proposed on the Fourth of July. My mother asked us to go to the backyard to get some chairs and he took me by the shed where we could see all of the fireworks. He kissed me, then he took the ring box out of his pocket
-                  and asked me to be his wife. He was shaking a little. The proposal was a little silly but perfect, just like him." — Jeska Cords
+              <div class="fw-col-sm-6" style="text-align:justify;">
+                <p>Una tarde tranquila del 5 Julio del 2019, durante mi jornada de trabajo, recibo un email para impartir un soporte a una tal "Glosario Arias" vía Webex sobre un
+                 proyecto en el cual yo no quería trabajar y confidencialmente luego me enteré que ella tampoco. Por el nombre pensé que se trataba una señora mayor. Al iniciar 
+                 el proyecto por error la sesión se inició con cámara encendida y la tal Glosario resulto una jovencita muy simpática y divertida. Mis compañeros más cercanos al 
+                 ver que siempre que le daba el soporte a la joven, reía hasta más no parar, y al no saber su nombre, la apodaron "Webex" y de ahí en adeltante me hacían 
+                 bullying insinuando que siempre que sonreía, era porque estaba hablando con "Webex".
+                 <br><br>
+                 Luego de varios soportes con esa programadora, yo como amante a los mojitos, un viernes sin pensarlo mucho decidí invitarle uno para relajar la tensión del 
+                 trabajo y que, para mi sorpresa, aceptó. En dicha salida comenzamos a compartir las cosas en común que teníamos que iban desde ideas de negocios afuturo hasta 
+                 fines de semanas de puras aventuras y aquí encontramos el complemento que nos faltaba a cada uno, ella aventurera y loca y yo tranquilo y sereno. 
+                 <br><br> “Todo tiene su momento oportuno, hay un tiempo para lo que se hace bajo el cielo.” — Dewin De León
                 </p>
+              </div>
+              <div class="fw-col-sm-6">
+                <a href="wp-content/themes/glanztheme/images/Noviazgo/losInicios.png"><img src="wp-content/themes/glanztheme/images/Noviazgo/losInicios.png" alt="Glanz"></a>
               </div>
             </div>
           </section>
@@ -159,31 +170,31 @@
               <div class="fw-col-xs-12 fw-col-sm-6 enh_push_none gla_bordered_block gla_grey_border gla_image_bck gla_col" style="background-color:#eeeeee;min-height:520px;">
                 <div class="gla_simple_block ">
                   <div class="gla_text_block">
-                    <h2 style="margin-bottom: 0;color: #9F6E65;">Dewin De León
+                    <h2 style="margin-bottom: 0;color: #9F6E65;">Rosalia Arias
                     </h2>
-                    <h3 style="margin-top: 0; text-align:center;">(Dewinski)
+                    <h3 style="margin-top: 0; text-align:center;">(Webex)
                     </h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio mollitia, ipsa accusamus eius. Aspernatur ab sed minima, doloremque eligendi voluptatibus repellat unde, facilis natus ex ipsum eius atque suscipit
-                      fugit.
+                    <p>Apasionada, divertida, amante de las aventuras, los planes improvisados y los viajes. Diseñadora por profesión y programadora por vocación. Fan de las películas
+                    de Marvel y DC, degustadora de libros exóticos y catadora de Sushis y chicharrones. Vivo como si cada día fuese mi último día.
                     </p>
                   </div>
                   <!-- <div class="gla_social_btns"> <a href="#"><i class="ti ti-facebook gla_icon_box"></i></a> <a href="#"><i class="ti ti-instagram gla_icon_box"></i></a> <a href="#"><i class="ti ti-google gla_icon_box"></i></a> </div> -->
-                </div>
-              </div>
-              <div class="fw-col-xs-12 fw-col-sm-6 enh_push_none gla_bordered_block gla_grey_border gla_image_bck gla_col" style="background-image:url(wp-content/themes/glanztheme/images/IMG_6626.png);min-height:520px;">
-                <div class="gla_simple_block "> 
                 </div>
               </div>
               <div class="fw-col-xs-12 fw-col-sm-6 enh_push_none gla_bordered_block gla_grey_border gla_image_bck gla_col" style="background-image:url(wp-content/themes/glanztheme/images/IMG_1202.png);min-height:520px;">
                 <div class="gla_simple_block "> 
                 </div>
               </div>
+              <div class="fw-col-xs-12 fw-col-sm-6 enh_push_none gla_bordered_block gla_grey_border gla_image_bck gla_col" style="background-image:url(wp-content/themes/glanztheme/images/IMG_6626.png);min-height:520px;">
+                <div class="gla_simple_block "> 
+                </div>
+              </div>
               <div class="fw-col-xs-12 fw-col-sm-6 enh_push_none gla_bordered_block gla_grey_border gla_image_bck gla_col" style="background-color:#eeeeee;min-height:520px;">
                 <div class="gla_simple_block ">
                   <div class="gla_text_block">
-                    <h2 style="margin-bottom: 0;text-align: center;color: #9F6E65;">Rosalia Arias
+                    <h2 style="margin-bottom: 0;text-align: center;color: #9F6E65;">Dewin de León
                     </h2>
-                    <h3 style="margin-top: 0; text-align:center;">(Webex)
+                    <h3 style="margin-top: 0; text-align:center;">(Dewinski)
                     </h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio mollitia, ipsa accusamus eius. Aspernatur ab sed minima, doloremque eligendi voluptatibus repellat unde, facilis natus ex ipsum eius atque suscipit
                       fugit.
@@ -710,7 +721,7 @@ if(Nombre !== "" && Apellido !== ""){
                     scrollTop: posicion
                  }, 2500); 
                  }else{
-                    $(".wpcf7-response-output").html("Lamento que no puedas asistir a este dia tan especial. Gracias!");
+                    $(".wpcf7-response-output").html("Lamento que no puedas asistir a este dia tan especial. <br><br> Si de todas formas quieres enviarnos un obsequio, puedes hacerlo haciendo click en el siguiente botón <br> ¡Muchas gracias!");
                  }
            
             }else{
