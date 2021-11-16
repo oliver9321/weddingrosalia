@@ -227,7 +227,7 @@
               <h2 class="gla_subtitle" style="color: #9F6E65;">Detalles de la ceremonia
               </h2>
               <div class="gla_text_block">
-                <p>Nuestra ceremonia se llevará a cabo en la Catedral de Nuestra Señora de la Consolación, ubicada en el centro de la ciudad de San Cristóbal frente al Parque Central Cristóbal Colón.
+                <p>Nuestra ceremonia se llevará a cabo en la Catedral de Nuestra Señora de la Consolación, ubicada en el centro de la ciudad de San Cristóbal frente al Parque Piedras Vivas.
                 </p>
               </div>
               <!-- <div class="fw-col-xs-12 fw-col-sm-4 enh_push_none gla_bordered_block gla_grey_border gla_col" style="min-height:250px;">
