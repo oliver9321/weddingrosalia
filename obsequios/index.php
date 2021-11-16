@@ -5,7 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Rosalia & Dewin</title>
-    <style type="text/css">
+    <link rel='stylesheet' id='glanztheme-library-css' href='../wp-content/themes/glanztheme/css/glanztheme_library.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='themify-icons-css' href='../wp-content/themes/glanztheme/fonts/themify-icons.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='marsha-font-css' href='../wp-content/themes/glanztheme/fonts/marsha/stylesheet.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='glanztheme-main-styles-css' href='../wp-content/themes/glanztheme/css/glanztheme_style.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='glanztheme-style-css' href='../wp-content/themes/glanztheme/style.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='fw-ext-breadcrumbs-add-css-css' href='../wp-content/plugins/unyson/framework/extensions/breadcrumbs/static/css/style.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='fw-ext-builder-frontend-grid-css' href='../wp-content/plugins/unyson/framework/extensions/builder/static/css/frontend-grid.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='fw-ext-forms-default-styles-css' href='../wp-content/plugins/unyson/framework/extensions/forms/static/css/frontend.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='fw-shortcode-section-background-video-css' href='../wp-content/plugins/unyson/framework/extensions/shortcodes/shortcodes/section/static/css/background.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='fw-shortcode-section-css' href='../wp-content/plugins/unyson/framework/extensions/shortcodes/shortcodes/section/static/css/styles.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='font-awesome-css' href='../wp-content/plugins/unyson/framework/static/libs/font-awesome/css/font-awesome.min.css' type='text/css' media='all' />
+    <link rel='stylesheet'  href='../css/toastr.min.css'  media='all' />
+
+ <style type="text/css">
         img.wp-smiley,
         img.emoji {
             display: inline !important;
@@ -181,26 +194,17 @@
 	color: #fec42d;
 	cursor: pointer;
 }
-    </style>
-
-    <link rel='stylesheet' id='glanztheme-library-css' href='../wp-content/themes/glanztheme/css/glanztheme_library.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='themify-icons-css' href='../wp-content/themes/glanztheme/fonts/themify-icons.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='marsha-font-css' href='../wp-content/themes/glanztheme/fonts/marsha/stylesheet.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='glanztheme-main-styles-css' href='../wp-content/themes/glanztheme/css/glanztheme_style.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='glanztheme-style-css' href='../wp-content/themes/glanztheme/style.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='fw-ext-breadcrumbs-add-css-css' href='../wp-content/plugins/unyson/framework/extensions/breadcrumbs/static/css/style.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='fw-ext-builder-frontend-grid-css' href='../wp-content/plugins/unyson/framework/extensions/builder/static/css/frontend-grid.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='fw-ext-forms-default-styles-css' href='../wp-content/plugins/unyson/framework/extensions/forms/static/css/frontend.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='fw-shortcode-section-background-video-css' href='../wp-content/plugins/unyson/framework/extensions/shortcodes/shortcodes/section/static/css/background.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='fw-shortcode-section-css' href='../wp-content/plugins/unyson/framework/extensions/shortcodes/shortcodes/section/static/css/styles.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='font-awesome-css' href='../wp-content/plugins/unyson/framework/static/libs/font-awesome/css/font-awesome.min.css' type='text/css' media='all' />
-   <style>
-        img.crazy_lazy {
+ 
+img.crazy_lazy {
             opacity: 0
-        }
+}
 
 .gla_default_menu li i {
     font-size: 23px !important;
+}
+hr{
+    margin-top: 9px !important;
+    margin-bottom: 6px !important;
 }
    
     </style>
@@ -245,9 +249,8 @@
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         <i class="fa fa-shopping-cart fa-3x"> <span class="badge badge-light" id="cantidadObsequios">0</span></i>
                                     </a>
-                                    <div class="dropdown-menu" id="listaRegalos">
-                                         <div class="dropdown-divider"> </div>
-                                            <center><button type="button" class="btn btn-success btn-sm">Confirmar</button></center> 
+                                    <div class="dropdown-menu" id="MyListaUsuario" style="width: 300px;">
+                                            
                                     </div>
 
                                 </li>
@@ -335,17 +338,18 @@
                                 <?php foreach ($obj2  as $key => $value) { 
                                     $Id           = $value['Id'];
                                     $Link         = $value['Link'];
+                                    $Titulo         = $value['Titulo'];
                                     $Imagen       = $value['Imagen'];
                                     $Stock        = $value['Stock'];
                                     $Descripcion  = trim($value['Descripcion']);
                                     ?>
 
-                                    <div class="col-sm-3 gla_anim_box grid-item <?= $value['CategoriaId'] ?> <?= ($Stock < 1) ? 'reservado' : 'disponible' ?>" onclick="AnadirRegalo(<?=$Id?>, <?=$Stock?>)">
+                                    <div class="col-sm-3 gla_anim_box grid-item <?= $value['CategoriaId'] ?> <?= ($Stock < 1) ? 'reservado' : 'disponible' ?>" onclick="AnadirRegalo(this)"  data-regaloId="<?=$Id;?>"  data-titulo="<?= $Titulo ?>"  data-stock="<?=$Stock;?>" alt="Click para agregar al carrito">
                                      <div class="single_product">
                                         <div class="product_image ">
-                                        <img src="http://dyrwedding.com/sistema/<?= $Imagen?>" alt="<?= $value['Titulo']?>" width="80">
+                                        <img src="http://dyrwedding.com/sistema/<?= $Imagen?>" alt="<?= $Titulo?>" width="80" alt="Click para agregar al carrito">
                                            
-                                            <?= ($Stock < 1) ? '<div class="new_badge ">Reservado</div>' : '<div class="new_badge2">'.$Stock.' Disponible (s)</div>' ?>
+                                            <?= ($Stock < 1) ? '<div class="new_badge ">Reservado</div>' : '<div class="new_badge2 stockdisponible" >'.$Stock.' Disponible (s)</div>' ?>
                                             <?= ($Descripcion != "") ? "<div class='box-content' style='color:white'>".$Descripcion."</div>" : ""; ?>
                                       <!--cantidadObsequios-->
                                         </div>
@@ -353,7 +357,7 @@
                                         <?= ($Stock > 0) ? '<b class="rounded-circle"><i class="fa fa-cart-plus text-success fa-2x "></i></b>' : '<b"><i class="fa fa-cart-plus text-danger fa-2x"></i></b>' ?>
                                         <div class="product_btm_text">
                                             <hr>
-                                            <h4><a  target="_blank" href="<?=$Link?>"><?=$value['Titulo'] ?></a></h4>
+                                            <h4><a alt="Click para agregar al carrito"  target="_blank" href="<?=$Link?>"><?=$Titulo?></a></h4>
                                             <span class="price"><b>RD$ <?= number_format($value['Precio'])  ?></b></span><br>
                                         </div>
                                     </div>
@@ -400,40 +404,140 @@
     <script type='text/javascript' src='../wp-content/themes/glanztheme/js/glanztheme_script.js' defer='defer'></script>
     <script type='text/javascript' src='../wp-content/plugins/speed-booster-pack/inc/js/jquery.unveil.min.js' defer='defer'></script>
     <script type='text/javascript' src='../wp-includes/js/wp-embed.min.js' defer='defer'></script>
-
+    <script type='text/javascript' src='../js/toastr.min.js' defer='defer'></script>
+    
     <script>
         
-        var MyLista = [];
+        let MyLista = [];
 
-        function AnadirRegalo(regaloId, Stock){
+        function AnadirRegalo(param){
 
+            let regaloId = $(param).attr("data-regaloId");
+            let Regalo = $(param).attr("data-titulo");
+            let Stock = $(param).attr("data-stock");
+
+            
             if(regaloId){
 
-
-               if(parseInt(Stock) ){
+                if(parseInt(Stock) > 0){
 
                 var nombre = localStorage.getItem("Nombre");
                 var apellido = localStorage.getItem("Apellido");
 
                 var cantidadActual =  $("#cantidadObsequios").html();
                 cantidadActual     = parseInt(cantidadActual);
-                console.log(cantidadActual);
-                cantidadActual = parseInt(cantidadActual) + parseInt(1);
-                $("#cantidadObsequios").html(cantidadActual);
 
-                MyLista.push({
-                    RegaloId: regaloId, 
-                    Nombre:  nombre,
-                    Apellido: apellido,
-                    Cantidad: Stock
+                if (MyLista.length > 0){
+
+                    let existe = false;
+
+                    for (let index = 0; index < MyLista.length; index++) {
+                        
+                        let element = MyLista[index];
+                    
+                        if(element.RegaloId == regaloId){
+                            existe = true;
+                            if(MyLista[index].Cantidad < Stock){
+                                MyLista[index].Cantidad =  (parseInt(MyLista[index].Cantidad)  + parseInt(1));
+
+                                cantidadActual = parseInt(cantidadActual) + parseInt(1);
+                                $("#cantidadObsequios").html(cantidadActual);
+
+                            }else{
+                               toastr.error('Regalo no disponible', 'info');
+                                $(param).hide();
+                            }
+                            
+                        }
+                    }
+
+                    if(existe == false){
+                        MyLista.push({
+                                RegaloId: regaloId, 
+                                Nombre:  nombre,
+                                Apellido: apellido,
+                                Cantidad: 1,
+                                Regalo: Regalo
+                            });
+                           
+                            toastr.success('Regalo agregado al carrito', 'R&D');
+                            cantidadActual = parseInt(cantidadActual) + parseInt(1);
+                             $("#cantidadObsequios").html(cantidadActual);
+                    }
+                        
+                }else{
+                    
+                    MyLista.push({
+                        RegaloId: regaloId, 
+                        Nombre:  nombre,
+                        Apellido: apellido,
+                        Cantidad: 1,
+                        Regalo: Regalo
+                    });
+
+
+                    toastr.success('Regalo agregado al carrito', 'R&D');
+                    cantidadActual = parseInt(cantidadActual) + parseInt(1);
+                    $("#cantidadObsequios").html(cantidadActual);
+                }
+
+                if(parseInt(Stock) == 1){
+                    $(param).hide();
+                }
+
+                $("#MyListaUsuario").html('');
+                MyLista.forEach(element=>{
+                    $("#MyListaUsuario").append('<a class="dropdown-item" href="#" style="color:black; padding-left:10px;">'+element.Regalo +' ('+ element.Cantidad+ ') </a><hr>');
                 });
-              
-                console.log(MyLista);
-            
+
+                $("#MyListaUsuario").append('<center><button type="button" class="btn-success" onclick="guardarOrden()">Confirmar</button></center>');
+
+                }
+
+           }
+
+        }
+
+function guardarOrden(){
+
+  
+
+      if(MyLista.length > 0){
+
+        let ocurrioError = false;
+
+            MyLista.forEach(orden =>{
+
+                $.ajax({
+                    type: "POST",
+                    url: "http://dyrwedding.com/sistema/index.php?c=ordenes&a=Save",
+                    data: orden,
+                    success: function(data){
+                            
+                        if(data){
+                            toastr.success('Regalo reservado', 'Muchas Gracias!');
+                        }else{
+                            ocurrioError = true;
+                            toastr.error('Ha ocurrido un error. Favor intentarlo mas tarde', 'info');
+                        }
+                           
+                   }, failure: function(errMsg) {
+                         toastr.error('Ha ocurrido un error. Favor intentarlo mas tarde', 'info');
+                    }
+                });
+            });
+
+            if(ocurrioError == false){
+                MyLista = [];
+                $("#MyListaUsuario").html('');
+                $("#cantidadObsequios").html("0")
+             setTimeout(() => {location.reload();}, 1000);
+                
             }
 
-            }
-        }
+          }
+         
+   }
     </script>
 </body>
 </html>
