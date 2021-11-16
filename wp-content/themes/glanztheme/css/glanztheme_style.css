@@ -3263,7 +3263,7 @@ nav .gla_default_menu .mega-menu-col>a {
 
 .gla_slide_title,
 h2.gla_slide_title {
-    font: 900 80px/80px marsha, Arial;
+    font: 400 80px/80px marsha, Arial;
     margin-bottom: 30px;
 }
 
@@ -4905,7 +4905,7 @@ video#video_background {
 /*06.1 Icon Boxes*/
 
 .grid-item a {
-  /*  cursor: url(../images/cursor.png), auto;*/
+    /*  cursor: url(../images/cursor.png), auto;*/
 }
 
 .grid-item .gla_shop_item {
@@ -4918,6 +4918,7 @@ video#video_background {
 
 .gla_icon_boxes {
     margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 #demo .container .gla_icon_boxes:nth-child(2) {

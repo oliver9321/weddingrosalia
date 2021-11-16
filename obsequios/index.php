@@ -214,7 +214,7 @@
             <nav class="gla_light_nav gla_transp_nav ">
                 <div class="container">
                     <div class="gla_logo_container clearfix">
-                        <div class="gla_logo_txt"> <a href="#" class="gla_logo">ROSALIA &amp; DEWIN</a>
+                        <div class="gla_logo_txt"> <a href="../index.php" class="gla_logo">ROSALIA &amp; DEWIN</a>
                             <div class="gla_logo_und">Diciembre 18, 2021</div>
                         </div>
                     </div>
@@ -238,18 +238,16 @@
                     <div class="gla_search_block"> </div>
                     <div class="gla_default_menu">
                         <div class="menu-menu-1-container">
-                            <ul id="menu-menu-2" class="menu">
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-137 current_page_item menu-item-766"><a href="../index.php">Inicio</a></li>
+                            <ul id="menu-menu-1" class="menu">
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-137 menu-item-766"><a href="../index.php">Inicio</a></li>
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-779"><a href="index.php">Obsequios</a></li>
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-780 dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         <i class="fa fa-shopping-cart fa-3x"> <span class="badge badge-light" id="cantidadObsequios">0</span></i>
                                     </a>
                                     <div class="dropdown-menu" id="listaRegalos">
-                                        
                                          <div class="dropdown-divider"> </div>
                                             <center><button type="button" class="btn btn-success btn-sm">Confirmar</button></center> 
-                                        
                                     </div>
 
                                 </li>
@@ -281,7 +279,7 @@
                         <div class="row gla_icon_boxes">
                             <div class="gla_icon_box fw-col-sm-4 text-center col-xs-12"> <i class="ti ti-gift"></i>
                                 <div class="gla_icon_box_content">
-                                    <h4> <b> PASO 1</b> </h4>Elegir el obsequio con el que más te identifiques y reservarlo</div>
+                                    <h4> <b> PASO 1</b> </h4>Elegir el/los obsequio/s con el que más te identifiques y agregarlo al carrito para reservarlo</div>
                             </div>
                             <div class="gla_icon_box fw-col-sm-4 text-center col-xs-12"> <i class="ti ti-shopping-cart-full"></i>
                                 <div class="gla_icon_box_content">
@@ -290,7 +288,27 @@
 
                             <div class="gla_icon_box fw-col-sm-4 text-center col-xs-12"> <i class="ti ti-mobile"></i>
                                 <div class="gla_icon_box_content">
-                                    <h4> <b> PASO 3 </b> </h4>Contactanos para coordinar la entrega del regalo</div>
+                                    <h4> <b> PASO 3 </b> </h4>Contáctanos para coordinar la entrega del regalo</div>
+                            </div>
+                        </div>
+                        <div style="margin-top: 50px;padding: 40px;background-color: #f2f2f2;max-width: 600px;margin:0 auto;">
+                            <p style="margin-bottom:0;"><strong>Nota:</strong> a través de esta página web no se compran los artículos, solo se separa para evitar duplicidad de regalos a modo de control interno. Para comprar el artículo, debe dirigirse a la tienda con el código, foto o nombre del artículo y comprarlo directamente allá.</p>
+                        </div>
+                        <hr style="margin-top:80px;">
+                        <div class="row gla_icon_boxes">
+                            <h3>También puedes regalarnos un aporte económica a una de nuestras siguientes cuentas:</h3><br>
+                            <div class="gla_icon_box fw-col-sm-4 text-center col-xs-12"> <i class="ti ti-gift"></i>
+                                <div class="gla_icon_box_content">
+                                    <h4> <b> Banco Popular</b> </h4>781944228</div>
+                            </div>
+                            <div class="gla_icon_box fw-col-sm-4 text-center col-xs-12"> <i class="ti ti-gift"></i>
+                                <div class="gla_icon_box_content">
+                                    <h4> <b>BanReservas</b> </h4>3200551850</div>
+                            </div>
+
+                            <div class="gla_icon_box fw-col-sm-4 text-center col-xs-12"> <i class="ti ti-gift"></i>
+                                <div class="gla_icon_box_content">
+                                    <h4> <b>APAP</b> </h4>1023539586</div>
                             </div>
                         </div>
                     </div>
@@ -349,23 +367,8 @@
 
                 <section class=" gla_section gla_image_bck gla_section_sml_padding" style=background-color:#e5e5e5;>
                     <div class="container ">
-                        <div class="fw-col-xs-12 fw-col-sm-4 gla_bordered_block gla_grey_border gla_col">
-                            <div class=" ">
-                                <div class="gla_text_block">
-                                    <p>2021 © Devsarrollando.org </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="fw-col-xs-12 fw-col-sm-4 enh_push_none gla_bordered_block gla_grey_border text-center gla_col">
-                            <div class=" ">
-                                <div class="gla_social_btns">
-                                     <a href="#"><i class="ti ti-facebook gla_icon_box"></i></a> 
-                                     <a href="#"><i class="ti ti-instagram gla_icon_box"></i></a>
-                            </div>
-                        </div>
-                        <div class="fw-col-xs-12 fw-col-sm-4 gla_bordered_block gla_grey_border gla_col">
-                            <div class=" "> </div>
-                        </div>
+                        <!-- <img src="wp-content/themes/glanztheme/images/animations/thnyou.gif" alt=""> -->
+                        <img class="gla_animated_flower" src="wp-content/themes/glanztheme/images/animations/thnyou.gif" height="200" style="height: 200px;" alt="">
                     </div>
                 </section>
             </div>

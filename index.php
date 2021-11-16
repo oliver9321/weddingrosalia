@@ -54,7 +54,7 @@
           <div class="container">
             <div class="gla_logo_container clearfix">
               <div class="gla_logo_txt"> 
-                <a href="#" class="gla_logo">ROSALIA &amp; DEWIN
+                <a href="index.php" class="gla_logo">ROSALIA &amp; DEWIN
                 </a>
                 <div class="gla_logo_und">Diciembre 18, 2021
                 </div>
@@ -129,7 +129,7 @@
                   <br>
                   <h2 style="color: #9F6E65;">Rosalia &amp; Dewin
                   </h2>
-                  <h4 style="font-family: 'Montserrat', sans-serif;color: #9F6E65;">Diciembre 18
+                  <h4 style="font-family: 'Montserrat', sans-serif;color: #9F6E65;font-size:20px;">Diciembre 18
                   </h4>
                   <h5 style="font-family: 'Montserrat', sans-serif;color: #9F6E65;">Catedral de Ntra. Sra. de la Consolación, San Cristóbal
                   </h5>
@@ -621,9 +621,7 @@ the visual arts program at the time), and she remembers Andy being an ‘arrogan
               </h2>
               <div class="gla_text_block">
                 <p style="font-size: 16px;">Estamos más que agradecidos con tu asistencia y para nosotros es un gran honor tenerte en el día más importante de nuestras vidas. Si quieres obsequiarnos algún presente, podrías hacerlo eligiendo uno de los artículos de nuestra
-                  lista de regalos o realizando un aporte económico en nuestra cuenta bancaria
-                  <br>
-                  <br> 781944228 Banco Popular (colocar en el asunto "Regalo de bodas")
+                  lista de regalos o realizando un aporte económico en cualquiera de nuestras cuentas bancarias.
                 </p>
                 <div class="col-md-12"> 
                   <a href="obsequios/index.php"  class="wpcf7-form-control wpcf7-submit btn submit">Obsequiar </a>
