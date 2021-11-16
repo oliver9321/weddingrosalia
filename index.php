@@ -89,7 +89,7 @@
                       </a>
                     </li>
                     <li id="menu-item-779" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-779">
-                      <a href="obsequios/">Obsequios
+                      <a href="obsequios/">Lista de regalos
                       </a>
                     </li>
                   </ul>
@@ -107,7 +107,7 @@
                     <a href="index.php">Inicio
                     </a>
                   </li>
-                  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-779"><a href="obsequios/">Obsequios</a></li> 
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-779"><a href="obsequios/">Lista de regalos</a></li> 
                 </ul>
               </div>
             </div>
@@ -154,7 +154,7 @@
                  Luego de varios soportes con esa programadora, yo como amante a los mojitos, un viernes sin pensarlo mucho decidí invitarle uno para relajar la tensión del 
                  trabajo y que, para mi sorpresa, aceptó. En dicha salida comenzamos a compartir las cosas en común que teníamos que iban desde ideas de negocios afuturo hasta 
                  fines de semanas de puras aventuras y aquí encontramos el complemento que nos faltaba a cada uno, ella aventurera y loca y yo tranquilo y sereno. 
-                 <br><br> “Todo tiene su momento oportuno, hay un tiempo para lo que se hace bajo el cielo.” — Dewin De León
+                 <br><br> “Inesperadamente, encontré la wasakaka de mi chicharrón” — Dewin De León
                 </p>
               </div>
               <div class="fw-col-sm-6">
@@ -165,14 +165,14 @@
           <section class=" gla_section gla_image_bck gla_fixed gla_auto_height " style=background-image:url(wp-content/themes/glanztheme/images/libros-de-amor-pareja.jpg); data-stellar-background-ratio="0.2">
             <div class="container ">
               <div class="fw-col-xs-12 fw-col-sm-6 enh_push_none gla_bordered_block gla_grey_border gla_image_bck gla_col" style="background-color:#eeeeee;min-height:520px;">
-                <div class="gla_simple_block ">
+                <div class="gla_simple_block " style="padding-top:80px;">
                   <div class="gla_text_block">
-                    <h2 style="margin-bottom: 0;color: #9F6E65;">Rosalia Arias
+                    <h2 style="margin-bottom: 0;color: #9F6E65; text-align:center;">Rosalia Arias
                     </h2>
                     <h3 style="margin-top: 0; text-align:center;">(Webex)
                     </h3>
-                    <p>Apasionada, divertida, amante de las aventuras, los planes improvisados y los viajes. Diseñadora por profesión y programadora por vocación. Fan de las películas
-                    de Marvel y DC, degustadora de libros exóticos y catadora de Sushis y chicharrones. Vivo como si cada día fuese mi último día.
+                    <p style="text-align:center;">Apasionada, divertida, amante de las aventuras, los planes improvisados y los viajes. Diseñadora por profesión y programadora por vocación. Fan de las películas
+                    de Marvel y DC, degustadora de libros exóticos y catadora de Sushis y chicharrones. Vivo como si cada día fuese mi último día.Cuerda con locura y loca con cordura.
                     </p>
                   </div>
                   <!-- <div class="gla_social_btns"> <a href="#"><i class="ti ti-facebook gla_icon_box"></i></a> <a href="#"><i class="ti ti-instagram gla_icon_box"></i></a> <a href="#"><i class="ti ti-google gla_icon_box"></i></a> </div> -->
@@ -187,14 +187,13 @@
                 </div>
               </div>
               <div class="fw-col-xs-12 fw-col-sm-6 enh_push_none gla_bordered_block gla_grey_border gla_image_bck gla_col" style="background-color:#eeeeee;min-height:520px;">
-                <div class="gla_simple_block ">
+                <div class="gla_simple_block " style="padding-top:80px;">
                   <div class="gla_text_block">
                     <h2 style="margin-bottom: 0;text-align: center;color: #9F6E65;">Dewin de León
                     </h2>
                     <h3 style="margin-top: 0; text-align:center;">(Dewinski)
                     </h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio mollitia, ipsa accusamus eius. Aspernatur ab sed minima, doloremque eligendi voluptatibus repellat unde, facilis natus ex ipsum eius atque suscipit
-                      fugit.
+                    <p style="text-align:center;">Workaholic y analítico. Una persona que planea todo antes de ejecutarlo y hasta no conseguir lo que desea no se detiene. Telemático de profesión y docente, programador y todólogo por vocación. Amante a los negocios, el trading y las series y películas animadas (Marvel y DC), degustador de costillas y del arroz con fideos y pollo.
                     </p>
                   </div>
                   <!-- <div class="gla_social_btns"> <a href="#"><i class="ti ti-facebook gla_icon_box"></i></a> <a href="#"><i class="ti ti-instagram gla_icon_box"></i></a> <a href="#"><i class="ti ti-google gla_icon_box"></i></a> </div> -->
@@ -366,13 +365,6 @@ the visual arts program at the time), and she remembers Andy being an ‘arrogan
                 </a> 
               </div>
               <div class="gla_portfolio grid">
-                <div class="col-sm-4 gla_anim_box grid-item Noviazgo">
-                  <div class="gla_shop_item">
-                    <a href="wp-content/themes/glanztheme/images/Noviazgo/losInicios.png" class="lightbox"> 
-                      <img src="wp-content/themes/glanztheme/images/Noviazgo/losInicios.png" alt="Glanz"> 
-                    </a>
-                  </div>
-                </div>
                 <div class="col-sm-4 gla_anim_box grid-item Noviazgo">
                   <div class="gla_shop_item">
                     <a href="wp-content/themes/glanztheme/images/Noviazgo/1.png" class="lightbox"> 
@@ -617,11 +609,11 @@ the visual arts program at the time), and she remembers Andy being an ‘arrogan
               <h2 class="gla_h2_title">Regalos
               </h2>
               <div class="gla_text_block">
-                <p style="font-size: 16px;">Estamos más que agradecidos con tu asistencia y para nosotros es un gran honor tenerte en el día más importante de nuestras vidas. Sin embargo, si quieres obsequiarnos algún presente, podrías hacerlo eligiendo uno de los artículos de nuestra
+                <p style="font-size: 16px;">Estamos más que agradecidos con tu asistencia y para nosotros es un gran honor tenerte en el día más importante de nuestras vidas. Sin embargo, si quieres regalarnos algún presente, podrías hacerlo eligiendo uno de los artículos de nuestra
                   lista de regalos o realizando un aporte económico en cualquiera de nuestras cuentas bancarias.
                 </p>
                 <div class="col-md-12"> 
-                  <a href="obsequios/index.php"  class="wpcf7-form-control wpcf7-submit btn submit">Obsequiar </a>
+                  <a href="obsequios/index.php"  class="wpcf7-form-control wpcf7-submit btn submit">Ver lista de regalos </a>
                   
                 </div>
               </div>
@@ -716,7 +708,7 @@ if(Nombre !== "" && Apellido !== ""){
                     scrollTop: posicion
                  }, 2500); 
                  }else{
-                    $(".wpcf7-response-output").html("Lamento que no puedas asistir a este dia tan especial. <br><br> Si de todas formas quieres enviarnos un obsequio, puedes hacerlo haciendo click en el siguiente botón <br> ¡Muchas gracias!");
+                    $(".wpcf7-response-output").html("Lamento que no puedas asistir a este dia tan especial. <br>Si de todas formas quieres enviarnos un regalo, puedes hacerlo a través de nuestra lista de regalos </a> <br> ¡Muchas gracias!");
                  }
            
             }else{
