@@ -72,7 +72,7 @@
                 </i> 
                 <b>Menú
                 </b> 
-                <b class="gla_main_menu_icon_b">Back
+                <b class="gla_main_menu_icon_b">Atrás
                 </b> 
               </div>
             </div>

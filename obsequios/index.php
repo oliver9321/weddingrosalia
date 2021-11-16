@@ -224,7 +224,7 @@ hr{
                         </div>
                     </div>
                     <div class="gla_main_menu gla_main_menu_mobile">
-                        <div class="gla_main_menu_icon"> <i></i><i></i><i></i><i></i> <b>Menu</b> <b class="gla_main_menu_icon_b">Back</b> </div>
+                        <div class="gla_main_menu_icon"> <i></i><i></i><i></i><i></i> <b>Menú</b> <b class="gla_main_menu_icon_b">Atrás</b> </div>
                     </div>
                     <div class="gla_main_menu_content gla_image_bck" data-color="rgba(0,0,0,0.9)" data-image="">
                         <div class="gla_over" data-color="#000" data-opacity="0.7"></div>
