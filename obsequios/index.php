@@ -300,7 +300,7 @@ hr{
                         </div>
                         <hr style="margin-top:80px !important;">
                         <div class="row gla_icon_boxes">
-                            <h3>También puedes regalarnos un aporte económica a una de nuestras siguientes cuentas:</h3><br>
+                            <h3>También puedes regalarnos un aporte económico a una de nuestras siguientes cuentas:</h3><br>
                             <div class="gla_icon_box fw-col-sm-4 text-center col-xs-12"> <i class="ti ti-gift"></i>
                                 <div class="gla_icon_box_content">
                                     <h4> <b> Banco Popular</b> </h4>781944228</div>

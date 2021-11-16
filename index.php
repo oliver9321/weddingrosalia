@@ -144,7 +144,7 @@
               </h2>
               <h3 class="gla_subtitle">De un soporte y una salida improvisada a encontrar el amor de mi vida
               </h3>
-              <div class="fw-col-sm-6" style="text-align:justify;">
+              <div class="fw-col-xs-6 fw-col-lg-6" style="text-align:justify;">
                 <p>Una tarde tranquila del 5 Julio del 2019, durante mi jornada de trabajo, recibo un email para impartir un soporte a una tal "Glosario Arias" vía Webex sobre un
                  proyecto en el cual yo no quería trabajar y confidencialmente luego me enteré que ella tampoco. Por el nombre pensé que se trataba una señora mayor. Al iniciar 
                  el proyecto por error la sesión se inició con cámara encendida y la tal Glosario resulto una jovencita muy simpática y divertida. Mis compañeros más cercanos al 
@@ -157,7 +157,7 @@
                  <br><br> “Inesperadamente, encontré la wasakaka de mi chicharrón” — Dewin De León
                 </p>
               </div>
-              <div class="fw-col-sm-6">
+              <div class="fw-col-xs-6 fw-col-lg-6">
                 <a href="wp-content/themes/glanztheme/images/Noviazgo/losInicios.png"><img src="wp-content/themes/glanztheme/images/Noviazgo/losInicios.png" alt="Glanz"></a>
               </div>
             </div>
