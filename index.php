@@ -123,15 +123,12 @@
               <div class="gla_invitation_container">
                 <div class="gla_invitation_i gla_image_bck" data-image="wp-content/themes/glanztheme/images/Invitacion1.png">
                   <p>
-                    <img src="wp-content/themes/glanztheme/images/animations/ourwedding_gold.gif" alt="Glanz" height="240">
+                    <img style="max-width:250px;" src="wp-content/themes/glanztheme/images/animations/ourwedding_gold.gif" alt="Glanz" height="240">
                   </p> 
-                  <br>
-                  <br>
-                  <h2 style="color: #9F6E65;">Rosalia &amp; Dewin
-                  </h2>
-                  <h4 style="font-family: 'Montserrat', sans-serif;color: #9F6E65;font-size:20px;">Diciembre 18
-                  </h4>
-                  <h5 style="font-family: 'Montserrat', sans-serif;color: #9F6E65;">Catedral de Ntra. Sra. de la Consolación, San Cristóbal
+                  <h5 style="font-family: 'Montserrat', sans-serif;color: #9F6E65;">Bienvenidos a nuestra página web de bodas, no podemos esperar para celebrar nuestro día especial con ustedes.
+                    <br><br> Hemos creado este sitio web como una forma conveniente e interactiva de compartir todos los detalles importantes con ustedes en el período previo a nuestra boda.
+                   <br><br> También puedes leer más sobre nuestra historia de amor, conocer un poco más de nosotros y acceder a nuestra lista de regalos.
+                   <br><br> Así que diviértete, echa un vistazo y ¡no olvides confirmar tu asistencia!
                   </h5>
                 </div>
               </div>
@@ -620,7 +617,7 @@ the visual arts program at the time), and she remembers Andy being an ‘arrogan
               <h2 class="gla_h2_title">Regalos
               </h2>
               <div class="gla_text_block">
-                <p style="font-size: 16px;">Estamos más que agradecidos con tu asistencia y para nosotros es un gran honor tenerte en el día más importante de nuestras vidas. Si quieres obsequiarnos algún presente, podrías hacerlo eligiendo uno de los artículos de nuestra
+                <p style="font-size: 16px;">Estamos más que agradecidos con tu asistencia y para nosotros es un gran honor tenerte en el día más importante de nuestras vidas. Sin embargo, si quieres obsequiarnos algún presente, podrías hacerlo eligiendo uno de los artículos de nuestra
                   lista de regalos o realizando un aporte económico en cualquiera de nuestras cuentas bancarias.
                 </p>
                 <div class="col-md-12"> 
