@@ -1,50 +1,57 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-  <head>
-    <style type="text/css">
-      img.wp-smiley,
-      img.emoji {
-        display: inline !important;
-        border: none !important;
-        box-shadow: none !important;
-        height: 1em !important;
-        width: 1em !important;
-        margin: 0 .07em !important;
-        vertical-align: -0.1em !important;
-        background: none !important;
-        padding: 0 !important;
-      }
-    </style>
-    <link rel='stylesheet' id='rsvp_css-css' href='wp-content/plugins/rsvp/rsvp_plugin.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='contact-form-7-css' href='wp-content/plugins/contact-form-7/includes/css/styles.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='sb_instagram_styles-css' href='wp-content/plugins/instagram-feed/css/sb-instagram.min.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='woocommerce-layout-css' href='wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='woocommerce-smallscreen-css' href='wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css' type='text/css' media='only screen and (max-width: 768px)' />
-    <link rel='stylesheet' id='woocommerce-general-css' href='wp-content/plugins/woocommerce/assets/css/woocommerce.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='glanztheme-studio-fonts-css' href='http://fonts.googleapis.com/css?family=Dosis%3A400%2C700%7COpen%2BSans%3A400%2C400i%2C700%2C700i%7CPlayfair+Display%3A400%2C400i%2C700%2C700i' type='text/css' media='all' />
-    <link rel='stylesheet' id='glanztheme-library-css' href='wp-content/themes/glanztheme/css/glanztheme_library.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='themify-icons-css' href='wp-content/themes/glanztheme/fonts/themify-icons.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='marsha-font-css' href='wp-content/themes/glanztheme/fonts/marsha/stylesheet.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='glanztheme-woo-commerce-css' href='wp-content/themes/glanztheme/css/woocommerce.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='glanztheme-main-styles-css' href='wp-content/themes/glanztheme/css/glanztheme_style.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='glanztheme-style-css' href='wp-content/themes/glanztheme/style.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='fw-ext-breadcrumbs-add-css-css' href='wp-content/plugins/unyson/framework/extensions/breadcrumbs/static/css/style.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='fw-ext-builder-frontend-grid-css' href='wp-content/plugins/unyson/framework/extensions/builder/static/css/frontend-grid.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='fw-ext-forms-default-styles-css' href='wp-content/plugins/unyson/framework/extensions/forms/static/css/frontend.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='fw-shortcode-section-background-video-css' href='wp-content/plugins/unyson/framework/extensions/shortcodes/shortcodes/section/static/css/background.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='fw-shortcode-section-css' href='wp-content/plugins/unyson/framework/extensions/shortcodes/shortcodes/section/static/css/styles.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='font-awesome-css' href='wp-content/plugins/unyson/framework/static/libs/font-awesome/css/font-awesome.min.css' type='text/css' media='all' />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <style>
-      img.crazy_lazy {
-        opacity: 0
-      }
-    </style>
-    <style>
-    </style>
-  </head>
-  <body class="page-template page-template-template-one-page page-template-template-one-page-php page page-id-137">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="profile" href="http://gmpg.org/xfn/11">
+  <title>Dewin & Rosalia wedding</title>
+  <link rel='dns-prefetch' href='http://ajax.aspnetcdn.com/' />
+  <link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
+  <link rel='dns-prefetch' href='http://s.w.org/' />
+  <style type="text/css">
+    img.wp-smiley,
+    img.emoji {
+      display: inline !important;
+      border: none !important;
+      box-shadow: none !important;
+      height: 1em !important;
+      width: 1em !important;
+      margin: 0 .07em !important;
+      vertical-align: -0.1em !important;
+      background: none !important;
+      padding: 0 !important;
+    }
+  </style>
+  <link rel='stylesheet' id='rsvp_css-css' href='wp-content/plugins/rsvp/rsvp_plugin.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='contact-form-7-css' href='wp-content/plugins/contact-form-7/includes/css/styles.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='sb_instagram_styles-css' href='wp-content/plugins/instagram-feed/css/sb-instagram.min.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='woocommerce-layout-css' href='wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='woocommerce-smallscreen-css' href='wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css' type='text/css' media='only screen and (max-width: 768px)' />
+  <link rel='stylesheet' id='woocommerce-general-css' href='wp-content/plugins/woocommerce/assets/css/woocommerce.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='glanztheme-studio-fonts-css' href='http://fonts.googleapis.com/css?family=Dosis%3A400%2C700%7COpen%2BSans%3A400%2C400i%2C700%2C700i%7CPlayfair+Display%3A400%2C400i%2C700%2C700i' type='text/css' media='all' />
+  <link rel='stylesheet' id='glanztheme-library-css' href='wp-content/themes/glanztheme/css/glanztheme_library.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='themify-icons-css' href='wp-content/themes/glanztheme/fonts/themify-icons.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='marsha-font-css' href='wp-content/themes/glanztheme/fonts/marsha/stylesheet.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='glanztheme-woo-commerce-css' href='wp-content/themes/glanztheme/css/woocommerce.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='glanztheme-main-styles-css' href='wp-content/themes/glanztheme/css/glanztheme_style.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='glanztheme-style-css' href='wp-content/themes/glanztheme/style.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='fw-ext-breadcrumbs-add-css-css' href='wp-content/plugins/unyson/framework/extensions/breadcrumbs/static/css/style.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='fw-ext-builder-frontend-grid-css' href='wp-content/plugins/unyson/framework/extensions/builder/static/css/frontend-grid.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='fw-ext-forms-default-styles-css' href='wp-content/plugins/unyson/framework/extensions/forms/static/css/frontend.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='fw-shortcode-section-background-video-css' href='wp-content/plugins/unyson/framework/extensions/shortcodes/shortcodes/section/static/css/background.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='fw-shortcode-section-css' href='wp-content/plugins/unyson/framework/extensions/shortcodes/shortcodes/section/static/css/styles.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='font-awesome-css' href='wp-content/plugins/unyson/framework/static/libs/font-awesome/css/font-awesome.min.css' type='text/css' media='all' />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <style>
+    img.crazy_lazy {
+      opacity: 0
+    }
+  </style>
+</head>
+
+<body class="page-template page-template-template-one-page page-template-template-one-page-php page page-id-137">
     <div class="gla_page gla_middle_titles" id="gla_page">
       <a href="#gla_page" class="gla_top ti ti-angle-up gla_go">
       </a>
@@ -53,28 +60,12 @@
         <nav class="gla_light_nav gla_transp_nav ">
           <div class="container">
             <div class="gla_logo_container clearfix">
-              <div class="gla_logo_txt"> 
-                <a href="index.php" class="gla_logo">ROSALIA &amp; DEWIN
-                </a>
-                <div class="gla_logo_und">Diciembre 18, 2021
-                </div>
+              <div class="gla_logo_txt"> <a href="../index.php" class="gla_logo">ROSALIA &amp; DEWIN</a>
+                <div class="gla_logo_und">Diciembre 18, 2021</div>
               </div>
             </div>
             <div class="gla_main_menu gla_main_menu_mobile">
-              <div class="gla_main_menu_icon"> 
-                <i>
-                </i>
-                <i>
-                </i>
-                <i>
-                </i>
-                <i>
-                </i> 
-                <b>Menú
-                </b> 
-                <b class="gla_main_menu_icon_b">Atrás
-                </b> 
-              </div>
+              <div class="gla_main_menu_icon"> <i></i><i></i><i></i><i></i> <b>Menú</b> <b class="gla_main_menu_icon_b">Atrás</b> </div>
             </div>
             <div class="gla_main_menu_content gla_image_bck" data-color="rgba(0,0,0,0.9)" data-image="">
               <div class="gla_over" data-color="#000" data-opacity="0.7">
@@ -272,8 +263,7 @@
                 <img class="gla_animated_flower" src="wp-content/themes/glanztheme/images/animations/rsvp_gold.gif" height="200" style="height: 200px!important" alt="">
               </p>
               <div class="fw-col-xs-12 fw-col-sm-3 gla_bordered_block gla_grey_border gla_col">
-                <div class=" "> 
-                </div>
+                <div class=" "> </div>
               </div>
               <div class="fw-col-xs-12 fw-col-sm-6 gla_bordered_block gla_grey_border gla_col">
                 <div class=" ">
@@ -332,7 +322,7 @@
                           </label>
                           <br/> 
                           <span class="wpcf7-form-control-wrap comments">
-                            <textarea name="Comentario" id="Comentario" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea form-control form-opacity" aria-invalid="false">
+                            <textarea name="Comentario" id="Comentario" class="wpcf7-form-control wpcf7-textarea form-control form-opacity" aria-invalid="false">
                             </textarea>
                           </span>
                         </div>
@@ -708,7 +698,7 @@ if(Nombre !== "" && Apellido !== ""){
                     scrollTop: posicion
                  }, 2500); 
                  }else{
-                    $(".wpcf7-response-output").html("Lamento que no puedas asistir a este dia tan especial. <br>Si de todas formas quieres enviarnos un regalo, puedes hacerlo a través de nuestra lista de regalos </a> <br> ¡Muchas gracias!");
+                    $(".wpcf7-response-output").html("Lamentamos que no puedas asistir a este dia tan especial. <br>Si de todas formas quieres enviarnos un regalo, puedes hacerlo a través de nuestra lista de regalos </a> <br> ¡Muchas gracias!");
                  }
            
             }else{
@@ -725,4 +715,5 @@ alert("Favor completar la informacion solicitada");
 
       </script>
       </body>
-    </html>
+
+</html>
