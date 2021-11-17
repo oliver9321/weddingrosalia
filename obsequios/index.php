@@ -267,7 +267,7 @@ hr{
             <div class="gla_over" data-gradient="" data-color="#282828" data-opacity="0.5"></div>
             <div class="container">
                 <div class="gla_slide_txt gla_slide_center_middle text-center">
-                    <p><img class="gla_animated_flower" src="../wp-content/themes/glanztheme/images/animations/flowers.gif" data-top-bottom="@src:http://glanz.starkethemes.com/wp-content/themes/glanztheme/images/animations/flowers.gif" height="180" style="height: 180px!important"
+                    <p><img class="gla_animated_flower" src="../wp-content/themes/glanztheme/images/flowers_slider/flowers.gif" data-top-bottom="@src:../wp-content/themes/glanztheme/images/flowers_slider/flowers.gif" height="180" style="height: 180px!important"
                             alt="Glanz"></p>
                     <div class="gla_slide_title">Espacio de Regalos</div>
                 </div>
