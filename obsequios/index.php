@@ -303,26 +303,26 @@ hr{
                             <h3>También puedes regalarnos un aporte económico a una de nuestras siguientes cuentas:</h3><br>
                             <div class="gla_icon_box fw-col-sm-4 text-center col-xs-12"> <i class="ti ti-gift"></i>
                                 <div class="gla_icon_box_content">
-                                    <h4> <b> Banco Popular</b> </h4>781944228</div>
+                                    <h4><b> Banco Popular</b> </h4>781944228</div>
                             </div>
                             <div class="gla_icon_box fw-col-sm-4 text-center col-xs-12"> <i class="ti ti-gift"></i>
                                 <div class="gla_icon_box_content">
-                                    <h4> <b>BanReservas</b> </h4>3200551850</div>
+                                    <h4><b>BanReservas</b> </h4>3200551850</div>
                             </div>
 
                             <div class="gla_icon_box fw-col-sm-4 text-center col-xs-12"> <i class="ti ti-gift"></i>
                                 <div class="gla_icon_box_content">
-                                    <h4> <b>APAP</b> </h4>1023539586</div>
+                                    <h4><b>APAP</b> </h4>1023539586</div>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section class=" gla_section gla_image_bck " style=background-color:#f2f2f2;>
+
+                 <section class=" gla_section gla_image_bck " style=background-color:#f2f2f2;>
                     <div class="container text-center">
                         <h2 class="gla_h2_title">Regalos de Boda</h2>
                         <div class="button-group filter-button-group">
-
-                        <?php
+                      <?php
                                 $obj = json_decode(file_get_contents('http://dyrwedding.com/sistema/index.php?c=categorias&a=getJsonCategorias'), true);
                                 echo '<a data-filter="*">Mostrar todos</a>';
                                 foreach ($obj as $key => $value) {
@@ -331,41 +331,41 @@ hr{
                                     }
                                 }
                             ?>
-
                         </div>
+
                         <div class="gla_portfolio grid">
                         <?php $obj2 = json_decode(file_get_contents('http://dyrwedding.com/sistema/index.php?c=regalos&a=getJsonRegalos'), true); ?>
                                
                                 <?php foreach ($obj2  as $key => $value) { 
                                     $Id           = $value['Id'];
                                     $Link         = $value['Link'];
-                                    $Titulo         = $value['Titulo'];
+                                    $Titulo       = $value['Titulo'];
                                     $Imagen       = $value['Imagen'];
                                     $Stock        = $value['Stock'];
                                     $Descripcion  = trim($value['Descripcion']);
-                                    ?>
+                                ?>
 
-                                    <div class="col-sm-3 gla_anim_box grid-item <?= $value['CategoriaId'] ?> <?= ($Stock < 1) ? 'reservado' : 'disponible' ?>" onclick="AnadirRegalo(this)"  data-regaloId="<?=$Id;?>"  data-titulo="<?= $Titulo ?>"  data-stock="<?=$Stock;?>" alt="Click para agregar al carrito">
+                                    <div class="col-sm-3 gla_anim_box grid-item <?= $value['CategoriaId'] ?> <?= ($Stock < 1) ? 'reservado' : 'disponible' ?>" alt="Click para agregar al carrito">
                                      <div class="single_product">
+                                         <div onclick="AnadirRegalo(this)"  data-regaloId="<?=$Id;?>"  data-titulo="<?= $Titulo ?>"  data-stock="<?=$Stock;?>" >
                                         <div class="product_image ">
                                         <img src="http://dyrwedding.com/sistema/<?= $Imagen?>" alt="<?= $Titulo?>" width="80" alt="Click para agregar al carrito">
-                                           
                                             <?= ($Stock < 1) ? '<div class="new_badge ">Reservado</div>' : '<div class="new_badge2 stockdisponible" >'.$Stock.' Disponible (s)</div>' ?>
                                             <?= ($Descripcion != "") ? "<div class='box-content' style='color:white'>".$Descripcion."</div>" : ""; ?>
-                                      <!--cantidadObsequios-->
                                         </div>
                                         <br>
                                         <?= ($Stock > 0) ? '<b class="rounded-circle"><i class="fa fa-cart-plus text-success fa-2x "></i> Reservar </b>' : '<b"><i class="fa fa-cart-plus text-danger fa-2x"></i> Reservar </b>' ?>
                                         <div class="product_btm_text">
                                             <hr>
-                                            <h4><a alt="Click para agregar al carrito"  target="_blank" href="<?=$Link?>"><?=$Titulo?></a></h4>
+                                            <h4><?=$Titulo?></h4>
                                             <span class="price"><b>RD$ <?= number_format($value['Precio'])  ?></b></span><br>
                                         </div>
+                                        </div>
+
+                                        <h5><a alt="Click para agregar al carrito"  class="btn btn-secondary" target="_blank" href="<?=$Link?>">Ver en tienda</a></h5>
                                     </div>
                                 </div>
-
                                 <?php } ?>
-
                         </div>
                     </div>
                 </section>
@@ -379,14 +379,15 @@ hr{
             </div>
         </section>
     </div>
+    
     <script type='text/javascript' src='../js/jquery.min.js' defer='defer'></script>
-    <script type='text/javascript'>
+   
+   <script type='text/javascript'>
 
     var nombre = localStorage.getItem("Nombre");
     if(nombre != ""){
         document.getElementById("InvitadoOnline").innerHTML = "Hola, "+ nombre;
     }
-
 
         try {
             jQuery.noConflict();
@@ -446,7 +447,8 @@ hr{
 
                             }else{
                                toastr.error('Regalo no disponible', 'info');
-                                $(param).hide();
+                                //$(param).hide();
+                                $(param).parent().hide();
                             }
                             
                         }
@@ -483,7 +485,8 @@ hr{
                 }
 
                 if(parseInt(Stock) == 1){
-                    $(param).hide();
+                   // $(param).hide();
+                    $(param).parent().hide();
                 }
 
                 $("#MyListaUsuario").html('');
@@ -500,8 +503,6 @@ hr{
         }
 
 function guardarOrden(){
-
-  
 
       if(MyLista.length > 0){
 
