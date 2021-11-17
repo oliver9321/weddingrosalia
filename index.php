@@ -680,7 +680,7 @@ the visual arts program at the time), and she remembers Andy being an ‘arrogan
       </script>
 
       <script>
-
+$("#Comentario").val("");
 function Registrar(){
 
 var Nombre      = $("#Nombre").val();
@@ -708,7 +708,7 @@ if(Nombre !== "" && Apellido !== ""){
                 $("#Nombre").val("");
                  $("#Apellido").val("");
                  $("#Apellido").val("");
-
+                 $("#Comentario").val("");
                  if(Asistira == 'Si'){
                     var posicion = $("#regalosSection").offset().top;
                   $("#regalosSection").offset().top;
