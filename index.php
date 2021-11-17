@@ -321,12 +321,12 @@
                           <label>Notas
                           </label>
                           <br/> 
-                          <span class="wpcf7-form-control-wrap comments">
-                            <textarea name="Comentario" id="Comentario" class="wpcf7-form-control wpcf7-textarea form-control form-opacity" aria-invalid="false">
-                            </textarea>
+                          <span class="wpcf7-form-control-wrap ">
+                            <textarea name="Comentario" id="Comentario"></textarea>
                           </span>
                         </div>
                         <div class="col-md-12"> 
+                          <br>
                           <input type="button" value="Confirmar" class="wpcf7-form-control wpcf7-submit btn submit"  onclick="Registrar()"/>
                         </div>
                       </div>
