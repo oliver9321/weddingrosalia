@@ -30,7 +30,7 @@
   <link rel='stylesheet' id='woocommerce-layout-css' href='wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css' type='text/css' media='all' />
   <link rel='stylesheet' id='woocommerce-smallscreen-css' href='wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css' type='text/css' media='only screen and (max-width: 768px)' />
   <link rel='stylesheet' id='woocommerce-general-css' href='wp-content/plugins/woocommerce/assets/css/woocommerce.css' type='text/css' media='all' />
-  <link rel='stylesheet' id='glanztheme-studio-fonts-css' href='http://fonts.googleapis.com/css?family=Dosis%3A400%2C700%7COpen%2BSans%3A400%2C400i%2C700%2C700i%7CPlayfair+Display%3A400%2C400i%2C700%2C700i' type='text/css' media='all' />
+  <!-- <link rel='stylesheet' id='glanztheme-studio-fonts-css' href='http://fonts.googleapis.com/css?family=Dosis%3A400%2C700%7COpen%2BSans%3A400%2C400i%2C700%2C700i%7CPlayfair+Display%3A400%2C400i%2C700%2C700i' type='text/css' media='all' /> -->
   <link rel='stylesheet' id='glanztheme-library-css' href='wp-content/themes/glanztheme/css/glanztheme_library.css' type='text/css' media='all' />
   <link rel='stylesheet' id='themify-icons-css' href='wp-content/themes/glanztheme/fonts/themify-icons.css' type='text/css' media='all' />
   <link rel='stylesheet' id='marsha-font-css' href='wp-content/themes/glanztheme/fonts/marsha/stylesheet.css' type='text/css' media='all' />
@@ -694,7 +694,7 @@ if(Nombre !== "" && Apellido !== ""){
                  }, 2500); 
                  }else{
                    $("#botonConfirmar").hide();
-                    $(".wpcf7-response-output").html('Lamentamos que no puedas asistir a este dia tan especial. <br>Si de todas formas quieres enviarnos un regalo, puedes hacerlo a través de nuestra lista de regalos </a> <br></br> <a href="obsequios/index.php" id="botonRegalos" class="wpcf7-form-control wpcf7-submit btn submit">Ver lista de regalos </a> <br></br> ¡Muchas gracias!');
+                    $(".wpcf7-response-output").html('Lamentamos que no puedas asistir a este dia tan especial. <br>Si de todas formas quieres enviarnos un presente, puedes hacerlo a través de nuestra lista de regalos o una de nuestras cuentas. </a> <br></br> <a href="obsequios/index.php" id="botonRegalos" class="wpcf7-form-control wpcf7-submit btn submit">Ver lista de regalos </a> <br></br> ¡Muchas gracias!');
                  }
            
             }else{
