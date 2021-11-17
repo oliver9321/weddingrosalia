@@ -10,6 +10,7 @@
     <link rel='stylesheet' id='marsha-font-css' href='../wp-content/themes/glanztheme/fonts/marsha/stylesheet.css' type='text/css' media='all' />
     <link rel='stylesheet' id='glanztheme-main-styles-css' href='../wp-content/themes/glanztheme/css/glanztheme_style.css' type='text/css' media='all' />
     <link rel='stylesheet' id='glanztheme-style-css' href='../wp-content/themes/glanztheme/style.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='glanztheme-studio-fonts-css' href='http://fonts.googleapis.com/css?family=Dosis%3A400%2C700%7COpen%2BSans%3A400%2C400i%2C700%2C700i%7CPlayfair+Display%3A400%2C400i%2C700%2C700i' type='text/css' media='all' />
     <link rel='stylesheet' id='fw-ext-breadcrumbs-add-css-css' href='../wp-content/plugins/unyson/framework/extensions/breadcrumbs/static/css/style.css' type='text/css' media='all' />
     <link rel='stylesheet' id='fw-ext-builder-frontend-grid-css' href='../wp-content/plugins/unyson/framework/extensions/builder/static/css/frontend-grid.css' type='text/css' media='all' />
     <link rel='stylesheet' id='fw-ext-forms-default-styles-css' href='../wp-content/plugins/unyson/framework/extensions/forms/static/css/frontend.css' type='text/css' media='all' />
@@ -223,7 +224,7 @@ hr{
                         </div>
                     </div>
                     <div class="gla_main_menu gla_main_menu_mobile">
-                        <div class="gla_main_menu_icon"> <i></i><i></i><i></i><i></i> <b>Menu</b> <b class="gla_main_menu_icon_b">Back</b> </div>
+                        <div class="gla_main_menu_icon"> <i></i><i></i><i></i><i></i> <b>Menú</b> <b class="gla_main_menu_icon_b">Atrás</b> </div>
                     </div>
                     <div class="gla_main_menu_content gla_image_bck" data-color="rgba(0,0,0,0.9)" data-image="">
                         <div class="gla_over" data-color="#000" data-opacity="0.7"></div>
@@ -233,7 +234,7 @@ hr{
                             <div class="menu-menu-1-container">
                                 <ul id="menu-menu-1" class="menu">
                                     <li id="menu-item-766" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-137 current_page_item menu-item-766"><a href="../index.php">Inicio</a></li>
-                                    <li id="menu-item-779" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-779"><a href="index.php">Obsequios</a></li>
+                                    <li id="menu-item-779" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-779"><a href="index.php">Lista de regalos</a></li>
                                 </ul>
                             </div>
                             <div class="gla_main_menu_content_menu_copy"> </div>
@@ -244,12 +245,12 @@ hr{
                         <div class="menu-menu-1-container">
                             <ul id="menu-menu-1" class="menu">
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-137 menu-item-766"><a href="../index.php">Inicio</a></li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-779"><a href="index.php">Obsequios</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-779"><a href="index.php">Lista de regalos</a></li>
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-780 dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <i class="fa fa-shopping-cart fa-3x"> <span class="badge badge-light" id="cantidadObsequios">0</span></i>
+                                        <i class="fa fa-cart-plus fa-3x"> <span class="badge badge-light" id="cantidadObsequios" style="font: 400 18px/18pxDosis;">0</span></i>
                                     </a>
-                                    <div class="dropdown-menu" id="MyListaUsuario" style="width: 300px;">
+                                    <div class="dropdown-menu" id="MyListaUsuario" style="width: 300px;padding:30px;">
                                             
                                     </div>
 
@@ -269,7 +270,7 @@ hr{
                 <div class="gla_slide_txt gla_slide_center_middle text-center">
                     <p><img class="gla_animated_flower" src="../wp-content/themes/glanztheme/images/animations/flowers.gif" data-top-bottom="@src:http://glanz.starkethemes.com/wp-content/themes/glanztheme/images/animations/flowers.gif" height="180" style="height: 180px!important"
                             alt="Glanz"></p>
-                    <div class="gla_slide_title">Espacio de Obsequios</div>
+                    <div class="gla_slide_title">Espacio de Regalos</div>
                 </div>
             </div>
             <a class="gla_scroll_down gla_go" href="#gla_content"> <b></b> Scroll </a>
@@ -278,11 +279,11 @@ hr{
             <div class="fw-page-builder-content">
                 <section class=" gla_section gla_image_bck " style=background-color:#ffffff;>
                     <div class="container text-center">
-                        <h2 class="gla_h2_title">Obsequiar en 3 pasos</h2>
+                        <h2 class="gla_h2_title">Regalar en 3 pasos</h2>
                         <div class="row gla_icon_boxes">
                             <div class="gla_icon_box fw-col-sm-4 text-center col-xs-12"> <i class="ti ti-gift"></i>
                                 <div class="gla_icon_box_content">
-                                    <h4> <b> PASO 1</b> </h4>Elegir el/los obsequio/s con el que más te identifiques y agregarlo al carrito para reservarlo</div>
+                                    <h4> <b> PASO 1</b> </h4>Elegir el/los regalo/s con el que más te identifiques y agregarlo al carrito para reservarlo</div>
                             </div>
                             <div class="gla_icon_box fw-col-sm-4 text-center col-xs-12"> <i class="ti ti-shopping-cart-full"></i>
                                 <div class="gla_icon_box_content">
@@ -297,9 +298,9 @@ hr{
                         <div style="margin-top: 50px;padding: 40px;background-color: #f2f2f2;max-width: 600px;margin:0 auto;">
                             <p style="margin-bottom:0;"><strong>Nota:</strong> a través de esta página web no se compran los artículos, solo se separa para evitar duplicidad de regalos a modo de control interno. Para comprar el artículo, debe dirigirse a la tienda con el código, foto o nombre del artículo y comprarlo directamente allá.</p>
                         </div>
-                        <hr style="margin-top:80px;">
+                        <hr style="margin-top:80px !important;">
                         <div class="row gla_icon_boxes">
-                            <h3>También puedes regalarnos un aporte económica a una de nuestras siguientes cuentas:</h3><br>
+                            <h3>También puedes regalarnos un aporte económico a una de nuestras siguientes cuentas:</h3><br>
                             <div class="gla_icon_box fw-col-sm-4 text-center col-xs-12"> <i class="ti ti-gift"></i>
                                 <div class="gla_icon_box_content">
                                     <h4> <b> Banco Popular</b> </h4>781944228</div>
@@ -318,7 +319,7 @@ hr{
                 </section>
                 <section class=" gla_section gla_image_bck " style=background-color:#f2f2f2;>
                     <div class="container text-center">
-                        <h2 class="gla_h2_title">Obsequios de Boda</h2>
+                        <h2 class="gla_h2_title">Regalos de Boda</h2>
                         <div class="button-group filter-button-group">
 
                         <?php
@@ -354,7 +355,7 @@ hr{
                                       <!--cantidadObsequios-->
                                         </div>
                                         <br>
-                                        <?= ($Stock > 0) ? '<b class="rounded-circle"><i class="fa fa-cart-plus text-success fa-2x "></i></b>' : '<b"><i class="fa fa-cart-plus text-danger fa-2x"></i></b>' ?>
+                                        <?= ($Stock > 0) ? '<b class="rounded-circle"><i class="fa fa-cart-plus text-success fa-2x "></i> Reservar </b>' : '<b"><i class="fa fa-cart-plus text-danger fa-2x"></i> Reservar </b>' ?>
                                         <div class="product_btm_text">
                                             <hr>
                                             <h4><a alt="Click para agregar al carrito"  target="_blank" href="<?=$Link?>"><?=$Titulo?></a></h4>
@@ -460,7 +461,7 @@ hr{
                                 Regalo: Regalo
                             });
                            
-                            toastr.success('Regalo agregado al carrito', 'R&D');
+                            toastr.success('Regalo agregado al carrito');
                             cantidadActual = parseInt(cantidadActual) + parseInt(1);
                              $("#cantidadObsequios").html(cantidadActual);
                     }
@@ -476,7 +477,7 @@ hr{
                     });
 
 
-                    toastr.success('Regalo agregado al carrito', 'R&D');
+                    toastr.success('Regalo agregado al carrito');
                     cantidadActual = parseInt(cantidadActual) + parseInt(1);
                     $("#cantidadObsequios").html(cantidadActual);
                 }
@@ -487,10 +488,10 @@ hr{
 
                 $("#MyListaUsuario").html('');
                 MyLista.forEach(element=>{
-                    $("#MyListaUsuario").append('<a class="dropdown-item" href="#" style="color:black; padding-left:10px;">'+element.Regalo +' ('+ element.Cantidad+ ') </a><hr>');
+                    $("#MyListaUsuario").append('<a class="dropdown-item" href="#" style="color:black; padding-left:10px;font: 400 18px/18px Dosis;">'+element.Regalo +' ('+ element.Cantidad+ ') </a><hr>');
                 });
 
-                $("#MyListaUsuario").append('<center><button type="button" class="btn-success" onclick="guardarOrden()">Confirmar</button></center>');
+                $("#MyListaUsuario").append('<center><button type="button" class="btn-success .btn .btnreserva" style="font: 400 18px/18px Dosis;border: 0;border-radius: 0;-webkit-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;background: #5cb85c;padding: 12px 15px;line-height: inherit;vertical-align: top;border-radius: 30px;margin-top:10px;" onclick="guardarOrden()">Confirmar reserva</button></center>');
 
                 }
 
@@ -515,7 +516,7 @@ function guardarOrden(){
                     success: function(data){
                             
                         if(data){
-                            toastr.success('Regalo reservado', 'Muchas Gracias!');
+                            toastr.success('Regalo reservado', '¡Muchas Gracias!');
                         }else{
                             ocurrioError = true;
                             toastr.error('Ha ocurrido un error. Favor intentarlo mas tarde', 'info');
