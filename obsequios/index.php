@@ -248,10 +248,9 @@ hr{
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-779"><a href="index.php">Lista de regalos</a></li>
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-780 dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <i class="fa fa-cart-plus fa-3x"> <span class="badge badge-light" id="cantidadObsequios" style="font: 400 18px/18pxDosis;">0</span></i>
+                                        <i class="fa fa-shopping-cart fa-2x"> <span class="badge badge-light" id="cantidadObsequios" style="font: 400 18px/18pxDosis;">0</span></i>
                                     </a>
                                     <div class="dropdown-menu" id="MyListaUsuario" style="width: 300px;padding:30px;">
-                                            
                                     </div>
 
                                 </li>
@@ -345,16 +344,16 @@ hr{
                                     $Descripcion  = trim($value['Descripcion']);
                                 ?>
 
-                                    <div class="col-sm-3 gla_anim_box grid-item <?= $value['CategoriaId'] ?> <?= ($Stock < 1) ? 'reservado' : 'disponible' ?>" alt="Click para agregar al carrito">
-                                     <div class="single_product">
+                                    <div class="col-sm-3 gla_anim_box grid-item   <?= $value['CategoriaId'] ?> <?= ($Stock < 1) ? 'reservado' : 'disponible' ?>" alt="Click para agregar al carrito">
+                                     <div class="single_product" data-regaloid="<?=$Id;?>">
                                          <div onclick="AnadirRegalo(this)"  data-regaloId="<?=$Id;?>"  data-titulo="<?= $Titulo ?>"  data-stock="<?=$Stock;?>" >
                                         <div class="product_image ">
                                         <img src="http://dyrwedding.com/sistema/<?= $Imagen?>" alt="<?= $Titulo?>" width="80" alt="Click para agregar al carrito">
-                                            <?= ($Stock < 1) ? '<div class="new_badge ">Reservado</div>' : '<div class="new_badge2 stockdisponible" >'.$Stock.' Disponible (s)</div>' ?>
+                                            <?= ($Stock < 1) ? '<div class="new_badge ">Reservado</div>' : '<div class="new_badge2"><b class="stockdisponible">'.$Stock.'</b> <b>Disponible (s)</b></div>' ?>
                                             <?= ($Descripcion != "") ? "<div class='box-content' style='color:white'>".$Descripcion."</div>" : ""; ?>
                                         </div>
                                         <br>
-                                        <?= ($Stock > 0) ? '<b class="rounded-circle"><i class="fa fa-cart-plus text-success fa-2x "></i> Reservar </b>' : '<b"><i class="fa fa-cart-plus text-danger fa-2x"></i> Reservar </b>' ?>
+                                        <?= ($Stock > 0) ? '<b class="rounded-circle"><i class="fa fa-cart-plus text-success fa-2x "></i> Agregar al carrito </b>' : '<b"><i class="fa fa-cart-plus text-danger fa-2x"></i> Agregar al carrito  </b>' ?>
                                         <div class="product_btm_text">
                                             <hr>
                                             <h4><?=$Titulo?></h4>
@@ -414,14 +413,14 @@ hr{
 
         function AnadirRegalo(param){
 
-            let regaloId = $(param).attr("data-regaloId");
-            let Regalo = $(param).attr("data-titulo");
-            let Stock = $(param).attr("data-stock");
+            let regaloId        = $(param).attr("data-regaloId");
+            let Regalo          = $(param).attr("data-titulo");
+            //let Stock           = $(param).attr("data-stock");
+            let currentStock    =  $(param).find('.stockdisponible').html();
 
-            
             if(regaloId){
 
-                if(parseInt(Stock) > 0){
+                if(parseInt(currentStock) > 0){
 
                 var nombre = localStorage.getItem("Nombre");
                 var apellido = localStorage.getItem("Apellido");
@@ -439,15 +438,20 @@ hr{
                     
                         if(element.RegaloId == regaloId){
                             existe = true;
-                            if(MyLista[index].Cantidad < Stock){
+                          
+                            if(MyLista[index].Cantidad <= currentStock){
+
                                 MyLista[index].Cantidad =  (parseInt(MyLista[index].Cantidad)  + parseInt(1));
 
                                 cantidadActual = parseInt(cantidadActual) + parseInt(1);
                                 $("#cantidadObsequios").html(cantidadActual);
 
+                                currentDivStock = parseInt(currentStock) - parseInt(1);
+                                $(param).find('.stockdisponible').html(currentDivStock);
+
                             }else{
-                               toastr.error('Regalo no disponible', 'info');
-                                //$(param).hide();
+                               toastr.error('Regalo agotado', 'info');
+                                $(param).addClass('new_badge');
                                 $(param).parent().hide();
                             }
                             
@@ -462,10 +466,16 @@ hr{
                                 Cantidad: 1,
                                 Regalo: Regalo
                             });
-                           
-                            toastr.success('Regalo agregado al carrito');
+                            toastr.options.closeButton = true;
+                            toastr.options.closeDuration = 5000;
+                            toastr.success('Regalo agregado. Ver carrito para confirmar');
+                            $(".fa-shopping-cart").addClass('text-success');
+                            
                             cantidadActual = parseInt(cantidadActual) + parseInt(1);
                              $("#cantidadObsequios").html(cantidadActual);
+
+                             currentDivStock = parseInt(currentStock) - parseInt(1);
+                            $(param).find('.stockdisponible').html(currentDivStock);
                     }
                         
                 }else{
@@ -478,29 +488,75 @@ hr{
                         Regalo: Regalo
                     });
 
+                    toastr.options.closeButton = true;
+                    toastr.success('Regalo agregado. Ver carrito para confirmar');
+                    $(".fa-shopping-cart").addClass('text-success');
+                  
 
-                    toastr.success('Regalo agregado al carrito');
                     cantidadActual = parseInt(cantidadActual) + parseInt(1);
                     $("#cantidadObsequios").html(cantidadActual);
-                }
 
-                if(parseInt(Stock) == 1){
-                   // $(param).hide();
+                    currentDivStock = parseInt(currentStock) - parseInt(1);
+               
+                   $(param).find('.stockdisponible').html(currentDivStock);
+
+                }
+                if(parseInt(currentDivStock) == 0){
                     $(param).parent().hide();
                 }
 
+                if(parseInt(currentStock) < 1){
+                    $(param).parent().hide();
+                }
+
+
                 $("#MyListaUsuario").html('');
                 MyLista.forEach(element=>{
-                    $("#MyListaUsuario").append('<a class="dropdown-item" href="#" style="color:black; padding-left:10px;font: 400 18px/18px Dosis;">'+element.Regalo +' ('+ element.Cantidad+ ') </a><hr>');
+                    $("#MyListaUsuario").append('<i class="fa fa-close" data-registro="'+element.RegaloId+'" data-cantidad="'+element.Cantidad+'" onclick="EliminarRegalo(this)"></i><b class="dropdown-item" style="color:black; padding-left:10px;font: 400 18px/18px Dosis;">'+element.Regalo +' ('+ element.Cantidad+ ') <hr></b>');
                 });
 
-                $("#MyListaUsuario").append('<center><button type="button" class="btn-success .btn .btnreserva" style="font: 400 18px/18px Dosis;border: 0;border-radius: 0;-webkit-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;background: #5cb85c;padding: 12px 15px;line-height: inherit;vertical-align: top;border-radius: 30px;margin-top:10px;" onclick="guardarOrden()">Confirmar reserva</button></center>');
+                $("#MyListaUsuario").append('<center><button type="button" class="btn-success btn btnreserva" style="font: 400 18px/18px Dosis;border: 0;border-radius: 0;-webkit-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;background: #5cb85c;padding: 12px 15px;line-height: inherit;vertical-align: top;border-radius: 30px;margin-top:10px;" class="btnConfirmarReserva" onclick="guardarOrden()">Confirmar reserva</button></center>');
 
+                }else{
+                    toastr.error('Regalo agotado', 'info');
+                   $(param).parent().hide();
                 }
 
            }
 
         }
+
+function EliminarRegalo(elemento){
+
+    let IdElemento  = $(elemento).attr("data-registro");
+    let CantidadElemento  = $(elemento).attr("data-cantidad");
+
+    $(".single_product").find("[data-regaloid='"+IdElemento+"']").parent().css("display", "block");
+
+    var stockActualDiv = $(".single_product").find("[data-regaloid='"+IdElemento+"']").find('.stockdisponible').html();
+    var nuevoStock = parseInt(stockActualDiv) + parseInt(CantidadElemento);
+    $(".single_product").find("[data-regaloid='"+IdElemento+"']").find('.stockdisponible').html(nuevoStock);
+
+
+   var StockCarrito =  $("#cantidadObsequios").html();
+   StockCarrito =  parseInt(StockCarrito) - (CantidadElemento);
+   $("#cantidadObsequios").html(StockCarrito);
+
+   if($("#cantidadObsequios").html() == "0"){
+    $(".fa-shopping-cart").removeClass('text-success');
+    $(".fa-shopping-cart").addClass('text-secondary');
+    $(".btnreserva").hide();
+   }
+    
+    $(elemento).next().remove();
+    $(elemento).remove();
+
+        MyLista = MyLista.filter(function(item) {
+            return item.RegaloId !== IdElemento
+        });
+
+
+}
 
 function guardarOrden(){
 
