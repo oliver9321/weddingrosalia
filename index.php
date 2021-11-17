@@ -327,7 +327,8 @@
                         </div>
                         <div class="col-md-12"> 
                           <br>
-                          <input type="button" value="Confirmar" class="wpcf7-form-control wpcf7-submit btn submit"  onclick="Registrar()"/>
+                          <input type="button"  id="botonConfirmar" value="Confirmar" class="wpcf7-form-control wpcf7-submit btn submit"  onclick="Registrar()"/>
+                         
                         </div>
                       </div>
                       <div class="wpcf7-response-output">
@@ -603,7 +604,7 @@ the visual arts program at the time), and she remembers Andy being an ‘arrogan
                   lista de regalos o realizando un aporte económico en cualquiera de nuestras cuentas bancarias.
                 </p>
                 <div class="col-md-12"> 
-                  <a href="obsequios/index.php"  class="wpcf7-form-control wpcf7-submit btn submit">Ver lista de regalos </a>
+                  <a href="obsequios/index.php" class="wpcf7-form-control wpcf7-submit btn submit">Ver lista de regalos </a>
                   
                 </div>
               </div>
@@ -611,15 +612,7 @@ the visual arts program at the time), and she remembers Andy being an ‘arrogan
             </div>
           </section>
         </div>
-      <script type='text/javascript' src='ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js' defer='defer'>
-      </script>
-      <script type='text/javascript'>
-        try {
-          jQuery.noConflict();
-        }
-        catch (e) {
-        };
-      </script>
+      <script type='text/javascript' src='ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js' defer='defer'> </script>
       <script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate.min.js' defer='defer'>
       </script>
       <script type='text/javascript' src='wp-content/plugins/rsvp/rsvp_plugin.js' defer='defer'>
@@ -662,6 +655,8 @@ the visual arts program at the time), and she remembers Andy being an ‘arrogan
       </script>
 
       <script>
+
+document.getElementById('botonRegalos').style.display = 'none';
 $("#Comentario").val("");
 function Registrar(){
 
@@ -698,7 +693,8 @@ if(Nombre !== "" && Apellido !== ""){
                     scrollTop: posicion
                  }, 2500); 
                  }else{
-                    $(".wpcf7-response-output").html("Lamentamos que no puedas asistir a este dia tan especial. <br>Si de todas formas quieres enviarnos un regalo, puedes hacerlo a través de nuestra lista de regalos </a> <br> ¡Muchas gracias!");
+                   $("#botonConfirmar").hide();
+                    $(".wpcf7-response-output").html('Lamentamos que no puedas asistir a este dia tan especial. <br>Si de todas formas quieres enviarnos un regalo, puedes hacerlo a través de nuestra lista de regalos </a> <br></br> <a href="obsequios/index.php" id="botonRegalos" class="wpcf7-form-control wpcf7-submit btn submit">Ver lista de regalos </a> <br></br> ¡Muchas gracias!');
                  }
            
             }else{
