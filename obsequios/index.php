@@ -240,6 +240,19 @@ hr{
                             <div class="gla_main_menu_content_menu_copy"> </div>
                         </div>
                     </div>
+                    <div class="info-reserva .gla_first_step .gla_header nav.gla_transp_nav">
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-780 dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-shopping-cart fa-2x"> <span class="badge badge-light" id="cantidadObsequios" style="font: 400 18px/18pxDosis;">0</span></i>
+                            </a>
+                            <div class="dropdown-menu" id="MyListaUsuario" style="width: 300px;padding:30px;">
+                            </div>
+
+                        </li>
+                        <li>
+                            <a href="#" id="InvitadoOnline"></a>
+                        </li>
+                    </div>
                     <div class="gla_search_block"> </div>
                     <div class="gla_default_menu">
                         <div class="menu-menu-1-container">
@@ -255,7 +268,7 @@ hr{
 
                                 </li>
                                 <li>
-                                <a href="#" id="InvitadoOnline"></a>
+                                    <a href="#" id="InvitadoOnline"></a>
                                 </li>
                             </ul>
                         </div>

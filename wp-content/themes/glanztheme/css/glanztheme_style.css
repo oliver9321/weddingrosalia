@@ -1091,7 +1091,7 @@ input[type="submit"]:hover {
 
 .gla_wht_txt .btn,
 .gla_wht_txt input[type="submit"] {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgb(247 163 12 / 60%);
   color: #fff;
 }
 
@@ -1658,6 +1658,42 @@ h6 .label {
     height: auto;
   }
 }
+
+/* @media (min-width: 1199px) {
+  .info-reserva {
+    position: relative;
+    display: inline-flex;
+    list-style-type: none;
+    margin-top: 24px;
+  }
+} */
+
+@media screen and (max-width: 1024px) {
+  .info-reserva {
+    position: relative;
+    display: inline-flex;
+    list-style-type: none;
+    /* background: rgba(255, 255, 255, 0.9); */
+    color: #9f6e65;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .info-reserva {
+    display: none;
+  }
+}
+
+/* @media screen and (max-width: 1024px) {
+  .info-reserva {
+    position: relative;
+    display: inline-flex;
+    list-style-type: none;
+    margin-top: 24px;
+  }
+} */
 
 /*Calendar*/
 
@@ -2579,7 +2615,7 @@ nav .gla_default_menu .mega-menu-col > a {
   height: 83px;
   background-color: rgba(255, 255, 255, 0.3);
   position: relative;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.1); */
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
@@ -2617,7 +2653,7 @@ nav .gla_default_menu .mega-menu-col > a {
 .gla_header nav.gla_transp_nav {
   background-color: rgba(255, 255, 255, 0);
   color: #fff;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.05); */
 }
 
 .gla_header nav.gla_transp_nav a {
