@@ -240,7 +240,7 @@ hr{
                             <div class="gla_main_menu_content_menu_copy"> </div>
                         </div>
                     </div>
-                    <div class="info-reserva .gla_first_step .gla_header nav.gla_transp_nav">
+                    <!-- <div class="info-reserva .gla_first_step .gla_header nav.gla_transp_nav">
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-780 dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fa fa-shopping-cart fa-2x"> <span class="badge badge-light" id="cantidadObsequios" style="font: 400 18px/18pxDosis;">0</span></i>
@@ -252,25 +252,40 @@ hr{
                         <li>
                             <a href="#" id="InvitadoOnline"></a>
                         </li>
-                    </div>
+                    </div> -->
                     <div class="gla_search_block"> </div>
-                    <div class="gla_default_menu">
-                        <div class="menu-menu-1-container">
-                            <ul id="menu-menu-1" class="menu">
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-137 menu-item-766"><a href="../index.php">Inicio</a></li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-779"><a href="index.php">Lista de regalos</a></li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-780 dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <i class="fa fa-shopping-cart fa-2x"> <span class="badge badge-light" id="cantidadObsequios" style="font: 400 18px/18pxDosis;">0</span></i>
-                                    </a>
-                                    <div class="dropdown-menu" id="MyListaUsuario" style="width: 300px;padding:30px;">
-                                    </div>
+                    <div class="elmenu">
+                        <div class="gla_default_menu">
+                            <div class="menu-menu-1-container">
+                                <ul id="menu-menu-1" class="menu">
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-137 menu-item-766"><a href="../index.php">Inicio</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-779"><a href="index.php">Lista de regalos</a></li>
+                                    <!-- <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-780 dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fa fa-shopping-cart fa-2x"> <span class="badge badge-light" id="cantidadObsequios" style="font: 400 18px/18pxDosis;">0</span></i>
+                                        </a>
+                                        <div class="dropdown-menu" id="MyListaUsuario" style="width: 300px;padding:30px;">
+                                        </div>
 
-                                </li>
-                                <li>
-                                    <a href="#" id="InvitadoOnline"></a>
-                                </li>
-                            </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#" id="InvitadoOnline"></a>
+                                    </li> -->
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="carrito-reserva">
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-780 dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-shopping-cart fa-2x"> <span class="badge badge-light" id="cantidadObsequios" style="font: 400 18px/18pxDosis;">0</span></i>
+                                </a>
+                                <div class="dropdown-menu" id="MyListaUsuario" style="width: 300px;padding:30px;">
+                                </div>
+
+                            </li>
+                            <li>
+                                <a href="#" id="InvitadoOnline"></a>
+                            </li>
                         </div>
                     </div>
                 </div>
@@ -481,7 +496,7 @@ hr{
                             });
                             toastr.options.closeButton = true;
                             toastr.options.closeDuration = 5000;
-                            toastr.success('Regalo agregado. Ver carrito para confirmar');
+                            toastr.success('Regalo agregado. Ver carrito para confirmar reserva');
                             $(".fa-shopping-cart").addClass('text-success');
                             
                             cantidadActual = parseInt(cantidadActual) + parseInt(1);
@@ -502,7 +517,7 @@ hr{
                     });
 
                     toastr.options.closeButton = true;
-                    toastr.success('Regalo agregado. Ver carrito para confirmar');
+                    toastr.success('Regalo agregado. Ver carrito para confirmar reserva');
                     $(".fa-shopping-cart").addClass('text-success');
                   
 

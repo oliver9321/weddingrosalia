@@ -1682,7 +1682,8 @@ h6 .label {
   }
 } */
 
-@media screen and (max-width: 1024px) {
+
+/* @media screen and (max-width: 1024px) {
     .info-reserva {
         position: relative;
         display: inline-flex;
@@ -1702,7 +1703,6 @@ h6 .label {
     .gla_header nav.gla_transp_nav {
         background-color: rgba(255, 255, 255, 0);
         color: #fff;
-        /* border-bottom: 1px solid rgba(255, 255, 255, 0.05); */
         height: 98px;
     }
 }
@@ -1714,6 +1714,35 @@ h6 .label {
     .gla_header nav {
         height: 52px;
         background: rgba(255, 255, 255, 0.7);
+    }
+} */
+
+.elmenu {
+    display: flex;
+    position: absolute;
+    right: 0;
+}
+
+.carrito-reserva {
+    display: flex;
+    list-style: none;
+    margin-top: 27px;
+}
+
+.carrito-reserva li:nth-child(2) {
+    margin: 4px 0 0 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    .carrito-reserva {
+        display: flex;
+        list-style: none;
+        margin-top: 60px;
+        margin-right: 20px;
+    }
+    #MyListaUsuario {
+        position: absolute;
+        left: -144px;
     }
 }
 
@@ -2029,7 +2058,7 @@ nav .gla_default_menu.gla_wht_txt ul ul a {
 }
 
 .gla_second_step .gla_default_menu>div>ul>li>a {
-    padding: 17px 20px;
+    /* padding: 17px 20px; */
     height: 52px;
 }
 
@@ -8039,6 +8068,7 @@ del .woocommerce-Price-amount {
     }
     .gla_header nav {
         top: 0;
+        height: 105px;
     }
     .gla_team {
         padding: 0;

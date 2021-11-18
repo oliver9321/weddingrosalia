@@ -136,7 +136,7 @@
               <h3 class="gla_subtitle">De un soporte y una salida improvisada a encontrar el amor de mi vida
               </h3>
               <div class="fw-col-xs-6 fw-col-lg-6" style="text-align:justify;">
-                <p>Una tarde tranquila del 5 Julio del 2019, durante mi jornada de trabajo, recibo un email para impartir un soporte a una tal "Glosario Arias" vía Webex sobre un
+                <p>Una tarde tranquila durante mi jornada de trabajo, recibo un email para impartir un soporte a una tal "Glosario Arias" vía Webex sobre un
                  proyecto en el cual yo no quería trabajar y confidencialmente luego me enteré que ella tampoco. Por el nombre pensé que se trataba una señora mayor. Al iniciar 
                  el proyecto por error la sesión se inició con cámara encendida y la tal Glosario resulto una jovencita muy simpática y divertida. Mis compañeros más cercanos al 
                  ver que siempre que le daba el soporte a la joven, reía hasta más no parar, y al no saber su nombre, la apodaron "Webex" y de ahí en adeltante me hacían 
